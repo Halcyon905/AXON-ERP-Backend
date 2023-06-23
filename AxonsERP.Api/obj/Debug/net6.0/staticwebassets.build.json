@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9guSNEof9pwwrqHnpovIte1GK1iVia3nhpeEQD/VsiQ=",
+  "Source": "AxonsERP.Api",
+  "BasePath": "_content/AxonsERP.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

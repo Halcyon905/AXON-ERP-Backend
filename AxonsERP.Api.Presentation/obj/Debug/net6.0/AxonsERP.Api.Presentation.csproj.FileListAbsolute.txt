@@ -1,0 +1,68 @@
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.deps.json
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Entities.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Service.Contracts.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Service.Contracts.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Entities.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.AssemblyReference.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.AssemblyInfoInputs.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.AssemblyInfo.cs
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.CoreCompileInputs.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.CopyComplete
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\refint\AxonsERP.Api.Presentation.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api.Presentation\obj\Debug\net6.0\ref\AxonsERP.Api.Presentation.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.deps.json
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Service.Contracts.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Service.Contracts.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.AssemblyReference.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.AssemblyInfoInputs.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.AssemblyInfo.cs
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.CopyComplete
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\refint\AxonsERP.Api.Presentation.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\ref\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.deps.json
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Service.Contracts.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Service.Contracts.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.AssemblyReference.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.AssemblyInfoInputs.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.AssemblyInfo.cs
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.CopyComplete
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\refint\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api.Presentation\obj\Debug\net6.0\ref\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.deps.json
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Service.Contracts.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Service.Contracts.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\bin\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.AssemblyReference.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.AssemblyInfoInputs.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.AssemblyInfo.cs
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.csproj.CopyComplete
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\refint\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api.Presentation\obj\Debug\net6.0\ref\AxonsERP.Api.Presentation.dll

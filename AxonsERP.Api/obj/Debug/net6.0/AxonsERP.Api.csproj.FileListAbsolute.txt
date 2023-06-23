@@ -1,0 +1,471 @@
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\appsettings.Development.json
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\appsettings.json
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.deps.json
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.runtimeconfig.json
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AutoMapper.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Dapper.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Humanizer.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Oracle.EntityFrameworkCore.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Oracle.ManagedDataAccess.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.DirectoryServices.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.Reflection.Metadata.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\linux\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\osx\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.Presentation.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Contracts.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Entities.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Repository.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.Contracts.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Repository.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Contracts.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Entities.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.Contracts.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.AssemblyReference.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.AssemblyInfoInputs.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.AssemblyInfo.cs
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.CoreCompileInputs.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.build.json
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.development.json
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\scopedcss\bundle\AxonsERP.Api.styles.css
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.CopyComplete
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\refint\AxonsERP.Api.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.genruntimeconfig.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Api\obj\Debug\net6.0\ref\AxonsERP.Api.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\appsettings.json
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.deps.json
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.runtimeconfig.json
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Dapper.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Humanizer.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Oracle.EntityFrameworkCore.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Oracle.ManagedDataAccess.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Reflection.Metadata.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\linux\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\osx\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.Presentation.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Contracts.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Repository.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.Contracts.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Repository.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Contracts.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.Contracts.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.AssemblyReference.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.AssemblyInfoInputs.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.AssemblyInfo.cs
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.CoreCompileInputs.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.AxonsERP.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.AxonsERP.Api.props
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AxonsERP.Api.props
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AxonsERP.Api.props
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\scopedcss\bundle\AxonsERP.Api.styles.css
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.CopyComplete
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\refint\AxonsERP.Api.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.genruntimeconfig.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\ref\AxonsERP.Api.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\appsettings.json
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.deps.json
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.runtimeconfig.json
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Dapper.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Oracle.EntityFrameworkCore.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Oracle.ManagedDataAccess.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Reflection.Metadata.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\linux\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\osx\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Contracts.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Repository.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.Contracts.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Repository.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Contracts.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.Contracts.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.AssemblyReference.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.AssemblyInfoInputs.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.AssemblyInfo.cs
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.CoreCompileInputs.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.AxonsERP.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.AxonsERP.Api.props
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AxonsERP.Api.props
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AxonsERP.Api.props
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\scopedcss\bundle\AxonsERP.Api.styles.css
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.CopyComplete
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\refint\AxonsERP.Api.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.genruntimeconfig.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Api\obj\Debug\net6.0\ref\AxonsERP.Api.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\appsettings.json
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.deps.json
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.runtimeconfig.json
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Dapper.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Oracle.EntityFrameworkCore.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Oracle.ManagedDataAccess.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.Reflection.Metadata.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\linux\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\osx\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.Presentation.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Contracts.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Repository.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.Contracts.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Api.Presentation.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Repository.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Contracts.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\bin\Debug\net6.0\AxonsERP.Service.Contracts.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.AssemblyReference.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.AssemblyInfoInputs.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.AssemblyInfo.cs
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.CoreCompileInputs.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.AxonsERP.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.AxonsERP.Api.props
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AxonsERP.Api.props
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AxonsERP.Api.props
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\scopedcss\bundle\AxonsERP.Api.styles.css
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.csproj.CopyComplete
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\refint\AxonsERP.Api.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\AxonsERP.Api.genruntimeconfig.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Api\obj\Debug\net6.0\ref\AxonsERP.Api.dll

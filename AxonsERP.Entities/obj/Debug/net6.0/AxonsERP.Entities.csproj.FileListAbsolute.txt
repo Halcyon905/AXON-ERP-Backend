@@ -1,0 +1,48 @@
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.deps.json
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.csproj.AssemblyReference.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.AssemblyInfoInputs.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.AssemblyInfo.cs
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.csproj.CoreCompileInputs.cache
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\obj\Debug\net6.0\refint\AxonsERP.Entities.dll
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.pdb
+D:\น้องฝึกงาน\Axons ERP API\AxonsERP.Entities\obj\Debug\net6.0\ref\AxonsERP.Entities.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.deps.json
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.csproj.AssemblyReference.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.AssemblyInfoInputs.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.AssemblyInfo.cs
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.csproj.CoreCompileInputs.cache
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\refint\AxonsERP.Entities.dll
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\savaros.wai\Downloads\API_น้องฝึกงาน\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\ref\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.deps.json
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.csproj.AssemblyReference.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.AssemblyInfoInputs.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.AssemblyInfo.cs
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\refint\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\Punn C\VisualCode\Axons ERP API (Only Bank Description)\AxonsERP.Entities\obj\Debug\net6.0\ref\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.deps.json
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\bin\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.csproj.AssemblyReference.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.AssemblyInfoInputs.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.AssemblyInfo.cs
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\obj\Debug\net6.0\refint\AxonsERP.Entities.dll
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\obj\Debug\net6.0\AxonsERP.Entities.pdb
+C:\Users\Punn C\VisualCode\AxonsGBM26000\AxonsERP.Entities\obj\Debug\net6.0\ref\AxonsERP.Entities.dll
