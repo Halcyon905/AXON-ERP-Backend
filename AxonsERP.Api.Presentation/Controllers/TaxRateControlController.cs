@@ -16,7 +16,7 @@ namespace AxonsERP.Api.Presentation.Controllers
         /// <summary>
         /// Gets the list of tax rate control
         /// </summary>
-        [HttpPost("Search")]
+        [HttpPost("Create")]
         [ProducesResponseType(typeof(string),200)]
         [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult GetListBankDesc()
