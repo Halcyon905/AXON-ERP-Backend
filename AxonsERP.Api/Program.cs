@@ -1,5 +1,4 @@
 using AxonsERP.Api.Extensions;
-using AxonsERP.Entities.ConfigurationModels;
 using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +6,6 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureRepositorManager();
 builder.Services.ConfigureServiceManager();
-builder.Services.AddScoped<IUserProvider, UserProvider>();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers()
   .AddApplicationPart(typeof(AxonsERP.Api.Presentation.AssemblyReference).Assembly);

@@ -8,7 +8,7 @@ using System.Text;
 
 namespace AxonsERP.Repository.Extensions.Utility
 {
-    public static class QueryBuider
+    public static class QueryBuilder
     {
         public static string CreateWhereQuery<T, U>(List<Search>? searchs, string? searchTermAlis, string? searchTermName, string? searchTermValue, ref OracleDynamicParameters dynParams, string prefixParamSpecial = null)
         {
@@ -215,7 +215,7 @@ namespace AxonsERP.Repository.Extensions.Utility
             var dynParams = new OracleDynamicParameters();
             if ((parameters.Search != null) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
             {
-                var whereCause = QueryBuider.
+                var whereCause = QueryBuilder.
                     CreateWhereQuery<TSearchFilter, TSearchTerm>
                     (parameters.Search, parameters.SearchTermAlis, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
 
@@ -226,7 +226,7 @@ namespace AxonsERP.Repository.Extensions.Utility
             var orderBy = "";
             if (!string.IsNullOrEmpty(parameters.OrderBy))
             {
-                orderBy = QueryBuider.CreateOrderQuery<T>(orderByQueryString: parameters.OrderBy, alias);
+                orderBy = QueryBuilder.CreateOrderQuery<T>(orderByQueryString: parameters.OrderBy, alias);
                 orderBy = $" {(!string.IsNullOrEmpty(orderBy) ? "ORDER BY " + orderBy : "")}";
             }
 

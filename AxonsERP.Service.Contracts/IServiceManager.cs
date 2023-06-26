@@ -2,5 +2,6 @@
 {
     public interface IServiceManager
     {
+        ITaxRateControlService TaxRateControlService { get; }
     }
 }

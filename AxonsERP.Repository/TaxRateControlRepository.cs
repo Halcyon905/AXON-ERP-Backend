@@ -14,25 +14,20 @@ namespace AxonsERP.Repository
 
         }
 
-        public void CreateTaxRateControl(TaxRateControl _TaxRateControl) 
+        public void CreateTaxRateControl(TaxRateControl _TaxRateControl) {}
+        public void UpdateTaxRateControl(TaxRateControl _TaxRateControl) {}
+        public void DeleteTaxRateControl(List<Dictionary<string, object>> TaxRateControlList) {}
+        public IEnumerable<TaxRateControl> GetListTaxRateControl() 
         {
-
+            var result = Connection.Query<TaxRateControl>(@"SELECT * FROM TAX_RATE_CONTROL");
+            return result;
         }
-        public void UpdateTaxRateControl(TaxRateControl _TaxRateControl) 
+        public TaxRateControl GetSingleTaxRateControl(string taxCode, DateTime effectiveDate) 
         {
-
-        }
-        public void DeleteTaxRateControl(List<Dictionary<string, object>> TaxRateControlList) 
-        {
-
-        }
-        public List<TaxRateControl> GetListTaxRateControl() 
-        {
-            return null;
-        }
-        public TaxRateControl GetSingleTaxRateControl(TaxRateControl _TaxRateControl) 
-        {
-            return null;
+            var result = Connection.QueryFirstOrDefault<TaxRateControl>(@"SELECT * FROM TAX_RATE_CONTROL 
+                                                                        WHERE TAX_CODE = :taxCode AND EFFECTIVE_DATE = :effectiveDate", 
+                                                                        new { taxCode, effectiveDate });
+            return result;
         }
     }
 }

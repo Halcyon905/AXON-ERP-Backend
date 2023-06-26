@@ -1,5 +1,6 @@
 using AxonsERP.Entities.Models;
-using System.Collections.Generic;
+using AxonsERP.Entities.RequestFeatures;
+using System;
 
 namespace AxonsERP.Contracts 
 {
@@ -8,7 +9,7 @@ namespace AxonsERP.Contracts
         void CreateTaxRateControl(TaxRateControl _TaxRateControl);
         void UpdateTaxRateControl(TaxRateControl _TaxRateControl);
         void DeleteTaxRateControl(List<Dictionary<string, object>> TaxRateControlList);
-        List<TaxRateControl> GetListTaxRateControl();
-        TaxRateControl GetSingleTaxRateControl(TaxRateControl _TaxRateControl);
+        IEnumerable<TaxRateControl> GetListTaxRateControl();
+        TaxRateControl GetSingleTaxRateControl(string taxCode, DateTime effectiveDate);
     }
 }
