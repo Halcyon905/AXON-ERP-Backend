@@ -18,17 +18,18 @@ namespace AxonsERP.Api.Presentation.Controllers
 
         /// <summary>
         /// Gets a tax rate control
+        /// date format = YYYY-MM-DDTHH:MI:SS e.g. 2018-08-01T00:00:00
         /// </summary>
         [HttpGet("{taxCode}/{effectiveDate}")]
         [ProducesResponseType(typeof(TaxRateControl),200)]
         [ProducesResponseType(typeof(ErrorDetails), 500)]
-        public IActionResult GetTaxRateControl(string taxCode, string effectiveDate)
+        public IActionResult GetTaxRateControl(string taxCode, DateTime effectiveDate)
         {
             var taxRateControl = _service.TaxRateControlService.GetSingleTaxRateControl(taxCode, effectiveDate);
             if(taxRateControl == null) {
                 throw new TaxRateControlNotFoundException(taxCode, effectiveDate);
             }
-            return Ok("Hello there");
+            return Ok(taxRateControl);
         }
 
         [HttpGet("TaxRateControlList")]

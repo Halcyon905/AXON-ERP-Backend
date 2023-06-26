@@ -21,9 +21,9 @@ namespace AxonsERP.Service
         {
             return _repositoryManager.TaxRateControl.GetListTaxRateControl();
         }
-        public TaxRateControl GetSingleTaxRateControl(string taxCode, string effectiveDate) 
+        public TaxRateControl GetSingleTaxRateControl(string taxCode, DateTime effectiveDate) 
         {
-            return null;
+            return _repositoryManager.TaxRateControl.GetSingleTaxRateControl(taxCode, effectiveDate);
         }
     }
 }
