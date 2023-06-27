@@ -11,5 +11,7 @@ namespace AxonsERP.Entities.Models
         public DateTime lastUpdateDate { get; set; }
         public string? function { get; set; }
         public int rateOriginal { get; set; }
+        public string? desc1 { get; set; }
+        public string? desc2 { get; set; }
     }
 }

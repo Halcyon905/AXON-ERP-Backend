@@ -26,8 +26,11 @@ namespace AxonsERP.Repository
                                                             T.CREATE_DATE as createDate,
                                                             T.LAST_UPDATE_DATE as lastUpdateDate,
                                                             T.FUNCTION as function,
-                                                            T.RATE_ORIGINAL as rateOriginal
-                                                            FROM TAX_RATE_CONTROL T");
+                                                            T.RATE_ORIGINAL as rateOriginal,
+                                                            G.DESC1 as desc1, 
+                                                            G.DESC2 as desc2
+                                                            FROM TAX_RATE_CONTROL T, GENERAL_DESC G
+                                                            WHERE T.TAX_CODE = G.GDCODE");
             return result;
         }
         public TaxRateControl GetSingleTaxRateControl(string taxCode, DateTime effectiveDate) 
@@ -39,9 +42,11 @@ namespace AxonsERP.Repository
                                                                         T.CREATE_DATE as createDate,
                                                                         T.LAST_UPDATE_DATE as lastUpdateDate,
                                                                         T.FUNCTION as function,
-                                                                        T.RATE_ORIGINAL as rateOriginal 
-                                                                        FROM TAX_RATE_CONTROL T
-                                                                        WHERE TAX_CODE = :taxCode AND EFFECTIVE_DATE = :effectiveDate", 
+                                                                        T.RATE_ORIGINAL as rateOriginal,
+                                                                        G.DESC1 as desc1, 
+                                                                        G.DESC2 as desc2
+                                                                        FROM TAX_RATE_CONTROL T, GENERAL_DESC G
+                                                                        WHERE TAX_CODE = :taxCode AND EFFECTIVE_DATE = :effectiveDate AND T.TAX_CODE = G.GDCODE", 
                                                                         new { taxCode, effectiveDate });
             return result;
         }
