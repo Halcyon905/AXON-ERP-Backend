@@ -47,7 +47,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-*.dll
-*.pdb
-*.editorconfig
-*.cache
+/*.dll
+/*.pdb
+/*.editorconfig
+/*.cache
