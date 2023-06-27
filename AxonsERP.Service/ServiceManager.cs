@@ -9,9 +9,9 @@ namespace AxonsERP.Service
     {
         private readonly Lazy<ITaxRateControlService> _taxRateControlService;
 
-        public ServiceManager(IRepositoryManager repositoryManager) 
+        public ServiceManager(IRepositoryManager repositoryManager, IMapper mapper) 
         {
-            _taxRateControlService = new Lazy<ITaxRateControlService>(() => new TaxRateControlService(repositoryManager));
+            _taxRateControlService = new Lazy<ITaxRateControlService>(() => new TaxRateControlService(repositoryManager, mapper));
         }
 
         public ITaxRateControlService TaxRateControlService => _taxRateControlService.Value;

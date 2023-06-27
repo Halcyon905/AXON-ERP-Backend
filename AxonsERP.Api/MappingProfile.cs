@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AxonsERP.Entities.Models;
 
 namespace AxonsERP.Api
 {
