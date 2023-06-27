@@ -32,6 +32,9 @@ namespace AxonsERP.Api.Presentation.Controllers
             return Ok(taxRateControl);
         }
 
+        /// <summary>
+        /// Gets all tax rate controls currently in database
+        /// </summary>
         [HttpGet("TaxRateControlList")]
         [ProducesResponseType(typeof(IEnumerable<TaxRateControl>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 500)]
