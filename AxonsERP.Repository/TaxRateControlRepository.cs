@@ -33,7 +33,14 @@ namespace AxonsERP.Repository
 
             Connection.Execute(query, _taxRateControl, transaction: Transaction);
         }
-        public void DeleteTaxRateControl(List<Dictionary<string, object>> TaxRateControlList) {}
+        public void DeleteTaxRateControl(List<TaxRateControlForDelete> TaxRateControlList) 
+        {
+            string query = @"DELETE FROM TAX_RATE_CONTROL
+                            WHERE TAX_CODE = :taxCode AND EFFECTIVE_DATE=:effectiveDate";
+            foreach(var taxRateControl in TaxRateControlList) {
+                Connection.Execute(query, taxRateControl, transaction: Transaction);
+            }
+        }
         public IEnumerable<TaxRateControl> GetListTaxRateControl() 
         {
             var result = Connection.Query<TaxRateControl>(@"SELECT T.TAX_CODE as taxCode,

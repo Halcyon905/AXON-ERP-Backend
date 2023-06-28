@@ -43,7 +43,7 @@ namespace AxonsERP.Service
         public void UpdateTaxRateControl(TaxRateControlForUpdate _taxRateControlForUpdate) 
         {
             _taxRateControlForUpdate.taxCode = "TXCOD" + _taxRateControlForUpdate.taxCode;
-            
+
             if(GetSingleTaxRateControl(_taxRateControlForUpdate.taxCode, _taxRateControlForUpdate.effectiveDate) == null) {
                 throw new TaxRateControlNotFoundException(_taxRateControlForUpdate.taxCode, _taxRateControlForUpdate.effectiveDate);
             }
@@ -56,7 +56,15 @@ namespace AxonsERP.Service
             _repositoryManager.TaxRateControl.UpdateTaxRateControl(_taxRateControl);
             _repositoryManager.Commit();
         }
-        public void DeleteTaxRateControl(List<Dictionary<string, object>> taxRateControlList) {}
+        public void DeleteTaxRateControl(List<TaxRateControlForDelete> taxRateControlList) 
+        {
+            foreach(var taxRateControl in taxRateControlList) {
+                taxRateControl.taxCode = "TXCOD" + taxRateControl.taxCode;
+            }
+
+            _repositoryManager.TaxRateControl.DeleteTaxRateControl(taxRateControlList);
+            _repositoryManager.Commit();
+        }
         public IEnumerable<TaxRateControl> GetListTaxRateControl() 
         {
             var resultRaw = _repositoryManager.TaxRateControl.GetListTaxRateControl();

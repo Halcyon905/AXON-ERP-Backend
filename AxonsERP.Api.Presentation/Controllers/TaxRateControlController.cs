@@ -68,5 +68,14 @@ namespace AxonsERP.Api.Presentation.Controllers
             _service.TaxRateControlService.UpdateTaxRateControl(_taxRateControl);
             return NoContent();
         }
+
+        [HttpDelete("Delete")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        public IActionResult DeleteTaxRateControl(List<TaxRateControlForDelete> _taxRateControlList) 
+        {
+            _service.TaxRateControlService.DeleteTaxRateControl(_taxRateControlList);
+            return NoContent();
+        }
     }
 }

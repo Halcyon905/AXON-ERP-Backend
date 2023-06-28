@@ -9,7 +9,7 @@ namespace AxonsERP.Contracts
     {
         TaxRateControl CreateTaxRateControl(TaxRateControlDto _taxRateControl);
         void UpdateTaxRateControl(TaxRateControlDto _taxRateControl);
-        void DeleteTaxRateControl(List<Dictionary<string, object>> TaxRateControlList);
+        void DeleteTaxRateControl(List<TaxRateControlForDelete> TaxRateControlList);
         IEnumerable<TaxRateControl> GetListTaxRateControl();
         TaxRateControl GetSingleTaxRateControl(string taxCode, DateTime effectiveDate);
     }
