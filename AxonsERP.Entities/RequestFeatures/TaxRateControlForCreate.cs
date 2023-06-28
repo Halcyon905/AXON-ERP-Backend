@@ -11,5 +11,6 @@ namespace AxonsERP.Entities.RequestFeatures
 
         public int rate { get; set; }
         public string? owner { get; set; }
+        public int rateOriginal { get; set; }
     }
 }

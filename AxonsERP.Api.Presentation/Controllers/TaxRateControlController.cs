@@ -20,9 +20,9 @@ namespace AxonsERP.Api.Presentation.Controllers
         /// Gets a tax rate control
         /// date format = YYYY-MM-DDTHH:MI:SS e.g. 2018-08-01T00:00:00
         /// </summary>
-        [HttpGet("{taxCode}/{effectiveDate}")]
+        [HttpGet("{taxCode}/{effectiveDate}", Name = "GetTaxRateControl")]
         [ProducesResponseType(typeof(TaxRateControl),200)]
-        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
         public IActionResult GetTaxRateControl(string taxCode, DateTime effectiveDate)
         {
             var taxRateControl = _service.TaxRateControlService.GetSingleTaxRateControl(taxCode, effectiveDate);
@@ -49,6 +49,7 @@ namespace AxonsERP.Api.Presentation.Controllers
         /// </summary>
         [HttpPost("Create")]
         [ProducesResponseType(typeof(TaxRateControl),201)]
+        [ProducesResponseType(typeof(ErrorDetails), 400)]
         [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult CreateSingleTaxRateControl(TaxRateControlForCreate _taxRateControl) 
         {   
@@ -56,7 +57,7 @@ namespace AxonsERP.Api.Presentation.Controllers
             if(confirmation is null) {
                 throw new InsertErrorException("Tax code " + _taxRateControl.taxCode + " on date " + _taxRateControl.effectiveDate + " already exists in database.");
             }
-            return Ok(confirmation);
+            return CreatedAtRoute("GetTaxRateControl", new { taxCode = confirmation.taxCode, effectiveDate = confirmation.effectiveDate }, confirmation);
         }
     }
 }
