@@ -1,11 +1,12 @@
 using AxonsERP.Entities.DataTransferObjects;
 using AxonsERP.Entities.Models;
+using AxonsERP.Entities.RequestFeatures;
 
 namespace AxonsERP.Service.Contracts 
 {
     public interface ITaxRateControlService 
     {
-        void CreateTaxRateControl(TaxRateControlDto _taxRateControlDto);
+        TaxRateControl CreateTaxRateControl(TaxRateControlForCreate _taxRateControlForCreate);
         void UpdateTaxRateControl(TaxRateControlDto _taxRateControlDto);
         void DeleteTaxRateControl(List<Dictionary<string, object>> TaxRateControlList);
         IEnumerable<TaxRateControl> GetListTaxRateControl();

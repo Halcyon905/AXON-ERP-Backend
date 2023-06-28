@@ -3,6 +3,7 @@ using AutoMapper;
 using AxonsERP.Contracts;
 using AxonsERP.Entities.Models;
 using AxonsERP.Entities.DataTransferObjects;
+using AxonsERP.Entities.RequestFeatures;
 
 namespace AxonsERP.Service 
 {
@@ -17,9 +18,22 @@ namespace AxonsERP.Service
             _mapper = mapper;
         }
 
-        public void CreateTaxRateControl(TaxRateControlDto _TaxRateControl) {}
-        public void UpdateTaxRateControl(TaxRateControlDto _TaxRateControl) {}
-        public void DeleteTaxRateControl(List<Dictionary<string, object>> TaxRateControlList) {}
+        public TaxRateControl CreateTaxRateControl(TaxRateControlForCreate _taxRateControlForCreate) 
+        {
+            var _taxRateControl = _mapper.Map<TaxRateControlDto>(_taxRateControlForCreate);
+
+            _taxRateControl.createDate = DateTime.Now;
+            _taxRateControl.lastUpdateDate = DateTime.Now;
+            _taxRateControl.function = "C";
+            _taxRateControl.rateOriginal = _taxRateControl.rate;
+
+            var resultRaw = _repositoryManager.TaxRateControl.CreateTaxRateControl(_taxRateControl);
+            _repositoryManager.Commit();
+
+            return resultRaw;
+        }
+        public void UpdateTaxRateControl(TaxRateControlDto _taxRateControl) {}
+        public void DeleteTaxRateControl(List<Dictionary<string, object>> taxRateControlList) {}
         public IEnumerable<TaxRateControl> GetListTaxRateControl() 
         {
             var resultRaw = _repositoryManager.TaxRateControl.GetListTaxRateControl();

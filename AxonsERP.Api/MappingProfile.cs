@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using AxonsERP.Entities.Models;
+using AxonsERP.Entities.DataTransferObjects;
+using AxonsERP.Entities.RequestFeatures;
 
 namespace AxonsERP.Api
 {
@@ -7,6 +9,8 @@ namespace AxonsERP.Api
     {
         public MappingProfile()
         {
+            CreateMap<TaxRateControlForCreate, TaxRateControlDto>();
+            CreateMap<TaxRateControlDto, TaxRateControlForCreate>();
         }
     }
 }

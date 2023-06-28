@@ -43,5 +43,20 @@ namespace AxonsERP.Api.Presentation.Controllers
             var taxRateControlList = _service.TaxRateControlService.GetListTaxRateControl();
             return Ok(taxRateControlList);
         }
+
+        /// <summary>
+        /// Create a new tax rate control
+        /// </summary>
+        [HttpPost("Create")]
+        [ProducesResponseType(typeof(TaxRateControl),201)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        public IActionResult CreateSingleTaxRateControl(TaxRateControlForCreate _taxRateControl) 
+        {   
+            var confirmation = _service.TaxRateControlService.CreateTaxRateControl(_taxRateControl);
+            if(confirmation is null) {
+                throw new InsertErrorException("Tax code " + _taxRateControl.taxCode + " on date " + _taxRateControl.effectiveDate + " already exists in database.");
+            }
+            return Ok(confirmation);
+        }
     }
 }
