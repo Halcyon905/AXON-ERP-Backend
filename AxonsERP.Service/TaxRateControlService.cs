@@ -24,7 +24,7 @@ namespace AxonsERP.Service
 
             _taxRateControl.createDate = DateTime.Now;
             _taxRateControl.lastUpdateDate = DateTime.Now;
-            _taxRateControl.function = "C";
+            _taxRateControl.function = "A";
 
             var resultRaw = _repositoryManager.TaxRateControl.CreateTaxRateControl(_taxRateControl);
             _repositoryManager.Commit();
