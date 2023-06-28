@@ -4,10 +4,10 @@ using AxonsERP.Entities.RequestFeatures;
 
 namespace AxonsERP.Service.Contracts 
 {
-    public interface ITaxRateControlService 
+    public interface ITaxRateControlService
     {
         TaxRateControl CreateTaxRateControl(TaxRateControlForCreate _taxRateControlForCreate);
-        void UpdateTaxRateControl(TaxRateControlDto _taxRateControlDto);
+        void UpdateTaxRateControl(TaxRateControlForUpdate _taxRateControlForUpdate);
         void DeleteTaxRateControl(List<Dictionary<string, object>> TaxRateControlList);
         IEnumerable<TaxRateControl> GetListTaxRateControl();
         TaxRateControl GetSingleTaxRateControl(string TaxCode, DateTime effectiveDate);

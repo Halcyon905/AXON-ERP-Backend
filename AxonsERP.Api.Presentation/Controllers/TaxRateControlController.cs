@@ -59,5 +59,17 @@ namespace AxonsERP.Api.Presentation.Controllers
             }
             return CreatedAtRoute("GetTaxRateControl", new { taxCode = confirmation.taxCode, effectiveDate = confirmation.effectiveDate }, confirmation);
         }
+
+        /// <summary>
+        /// Change rate of a tax rate control
+        /// </summary>
+        [HttpPut("UpdateRate")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        public IActionResult UpdateSingleTaxRateControl(TaxRateControlForUpdate _taxRateControl) 
+        {   
+            _service.TaxRateControlService.UpdateTaxRateControl(_taxRateControl);
+            return NoContent();
+        }
     }
 }

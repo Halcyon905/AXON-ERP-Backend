@@ -32,7 +32,14 @@ namespace AxonsERP.Repository
             result = GetSingleTaxRateControl(_taxRateControl.taxCode, _taxRateControl.effectiveDate);
             return result;
         }
-        public void UpdateTaxRateControl(TaxRateControlDto _taxRateControl) {}
+        public void UpdateTaxRateControl(TaxRateControlDto _taxRateControl) 
+        {
+            _taxRateControl.taxCode = "TXCOD" + _taxRateControl.taxCode;
+            string query = @"UPDATE TAX_RATE_CONTROL SET RATE=:rate, RATE_ORIGINAL=:rateOriginal, LAST_UPDATE_DATE=:lastUpdateDate, FUNCTION=:function 
+                            WHERE TAX_CODE = :taxCode AND EFFECTIVE_DATE=:effectiveDate";
+
+            Connection.Execute(query, _taxRateControl, transaction: Transaction);
+        }
         public void DeleteTaxRateControl(List<Dictionary<string, object>> TaxRateControlList) {}
         public IEnumerable<TaxRateControl> GetListTaxRateControl() 
         {

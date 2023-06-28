@@ -31,7 +31,16 @@ namespace AxonsERP.Service
 
             return resultRaw;
         }
-        public void UpdateTaxRateControl(TaxRateControlDto _taxRateControl) {}
+        public void UpdateTaxRateControl(TaxRateControlForUpdate _taxRateControlForUpdate) 
+        {
+            var _taxRateControl = _mapper.Map<TaxRateControlDto>(_taxRateControlForUpdate);
+
+            _taxRateControl.lastUpdateDate = DateTime.Now;
+            _taxRateControl.function = "C";
+
+            _repositoryManager.TaxRateControl.UpdateTaxRateControl(_taxRateControl);
+            _repositoryManager.Commit();
+        }
         public void DeleteTaxRateControl(List<Dictionary<string, object>> taxRateControlList) {}
         public IEnumerable<TaxRateControl> GetListTaxRateControl() 
         {

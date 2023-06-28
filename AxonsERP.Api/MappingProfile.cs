@@ -10,7 +10,7 @@ namespace AxonsERP.Api
         public MappingProfile()
         {
             CreateMap<TaxRateControlForCreate, TaxRateControlDto>();
-            CreateMap<TaxRateControlDto, TaxRateControlForCreate>();
+            CreateMap<TaxRateControlForUpdate, TaxRateControlDto>();
         }
     }
 }
