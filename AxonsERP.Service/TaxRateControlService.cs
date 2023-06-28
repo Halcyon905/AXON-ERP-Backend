@@ -2,6 +2,7 @@ using AxonsERP.Service.Contracts;
 using AutoMapper;
 using AxonsERP.Contracts;
 using AxonsERP.Entities.Models;
+using AxonsERP.Entities.Exceptions;
 using AxonsERP.Entities.DataTransferObjects;
 using AxonsERP.Entities.RequestFeatures;
 
@@ -20,6 +21,12 @@ namespace AxonsERP.Service
 
         public TaxRateControl CreateTaxRateControl(TaxRateControlForCreate _taxRateControlForCreate) 
         {
+            _taxRateControlForCreate.taxCode = "TXCOD" + _taxRateControlForCreate.taxCode;
+
+            if(GetSingleTaxRateControl(_taxRateControlForCreate.taxCode, _taxRateControlForCreate.effectiveDate) != null) {
+                throw new TaxRateControlDuplicateException(_taxRateControlForCreate.taxCode, _taxRateControlForCreate.effectiveDate);
+            }
+
             var _taxRateControl = _mapper.Map<TaxRateControlDto>(_taxRateControlForCreate);
 
             _taxRateControl.createDate = DateTime.Now;
@@ -27,12 +34,20 @@ namespace AxonsERP.Service
             _taxRateControl.function = "A";
 
             var resultRaw = _repositoryManager.TaxRateControl.CreateTaxRateControl(_taxRateControl);
-            _repositoryManager.Commit();
+            if(resultRaw != null) {
+                _repositoryManager.Commit();
+            }
 
             return resultRaw;
         }
         public void UpdateTaxRateControl(TaxRateControlForUpdate _taxRateControlForUpdate) 
         {
+            _taxRateControlForUpdate.taxCode = "TXCOD" + _taxRateControlForUpdate.taxCode;
+            
+            if(GetSingleTaxRateControl(_taxRateControlForUpdate.taxCode, _taxRateControlForUpdate.effectiveDate) == null) {
+                throw new TaxRateControlNotFoundException(_taxRateControlForUpdate.taxCode, _taxRateControlForUpdate.effectiveDate);
+            }
+
             var _taxRateControl = _mapper.Map<TaxRateControlDto>(_taxRateControlForUpdate);
 
             _taxRateControl.lastUpdateDate = DateTime.Now;

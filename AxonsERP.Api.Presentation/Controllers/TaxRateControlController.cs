@@ -54,9 +54,6 @@ namespace AxonsERP.Api.Presentation.Controllers
         public IActionResult CreateSingleTaxRateControl(TaxRateControlForCreate _taxRateControl) 
         {   
             var confirmation = _service.TaxRateControlService.CreateTaxRateControl(_taxRateControl);
-            if(confirmation is null) {
-                throw new InsertErrorException("Tax code " + _taxRateControl.taxCode + " on date " + _taxRateControl.effectiveDate + " already exists in database.");
-            }
             return CreatedAtRoute("GetTaxRateControl", new { taxCode = confirmation.taxCode, effectiveDate = confirmation.effectiveDate }, confirmation);
         }
 

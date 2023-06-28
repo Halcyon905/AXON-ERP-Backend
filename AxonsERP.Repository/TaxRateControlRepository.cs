@@ -18,23 +18,16 @@ namespace AxonsERP.Repository
 
         public TaxRateControl CreateTaxRateControl(TaxRateControlDto _taxRateControl) 
         {
-            _taxRateControl.taxCode = "TXCOD" + _taxRateControl.taxCode;
-            var result = GetSingleTaxRateControl(_taxRateControl.taxCode, _taxRateControl.effectiveDate);
-            if(result != null) {
-                return null;
-            }
-
             string query = @"INSERT INTO TAX_RATE_CONTROL(TAX_CODE, EFFECTIVE_DATE, RATE, OWNER, CREATE_DATE, LAST_UPDATE_DATE, FUNCTION, RATE_ORIGINAL)
                             VALUES (:taxCode, :effectiveDate, :rate, :owner, :createDate, :lastUpdateDate, :function, :rateOriginal)";
 
             Connection.Execute(query, _taxRateControl, transaction: Transaction);
 
-            result = GetSingleTaxRateControl(_taxRateControl.taxCode, _taxRateControl.effectiveDate);
+            var result = GetSingleTaxRateControl(_taxRateControl.taxCode, _taxRateControl.effectiveDate);
             return result;
         }
         public void UpdateTaxRateControl(TaxRateControlDto _taxRateControl) 
         {
-            _taxRateControl.taxCode = "TXCOD" + _taxRateControl.taxCode;
             string query = @"UPDATE TAX_RATE_CONTROL SET RATE=:rate, RATE_ORIGINAL=:rateOriginal, LAST_UPDATE_DATE=:lastUpdateDate, FUNCTION=:function 
                             WHERE TAX_CODE = :taxCode AND EFFECTIVE_DATE=:effectiveDate";
 
