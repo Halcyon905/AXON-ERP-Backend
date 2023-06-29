@@ -3,5 +3,6 @@
     public interface IServiceManager
     {
         ITaxRateControlService TaxRateControlService { get; }
+        IGeneralDescService GeneralDescService{ get; }
     }
 }

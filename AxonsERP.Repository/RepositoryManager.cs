@@ -12,6 +12,7 @@ namespace AxonsERP.Repository
         private IDbTransaction _transaction;
         private IApplicationCtrlRepository? _applicationCtrlRepository;
         private ITaxRateControlRepository? _taxRateControlRepository;
+        private IGeneralDescRepository? _generalDescRepository;
         private bool _disposed;
 
         public RepositoryManager(IConfiguration configuration)
@@ -23,12 +24,17 @@ namespace AxonsERP.Repository
 
         public IApplicationCtrlRepository ApplicationCtrl
         {
-            get { return _applicationCtrlRepository ??= new ApplicationCtrlRepository(_transaction); }
+            get { return _applicationCtrlRepository ??= new ApplicationCtrlRepository(_transaction);}
         }
 
         public ITaxRateControlRepository TaxRateControl 
         {
             get { return _taxRateControlRepository ??= new TaxRateControlRepository(_transaction);}
+        }
+
+        public IGeneralDescRepository GeneralDescRepository
+        {
+            get { return _generalDescRepository ??= new GeneralDescRepository(_transaction);}
         }
 
         public void Commit()
