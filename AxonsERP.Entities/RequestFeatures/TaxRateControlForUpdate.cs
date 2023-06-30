@@ -9,7 +9,7 @@ namespace AxonsERP.Entities.RequestFeatures
         [Required]
         public DateTime effectiveDate { get; set; }
 
-        public int rate { get; set; }
-        public int rateOriginal { get; set; }
+        public float rate { get; set; }
+        public float rateOriginal { get; set; }
     }
 }
