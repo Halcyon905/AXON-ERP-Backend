@@ -72,7 +72,8 @@ namespace AxonsERP.Service
         }
         public TaxRateControl GetSingleTaxRateControl(string taxCode, DateTime effectiveDate) 
         {
-            var resultRaw = _repositoryManager.TaxRateControl.GetSingleTaxRateControl(taxCode, effectiveDate);
+            var taxCodeEdit = "TXCOD" + taxCode;
+            var resultRaw = _repositoryManager.TaxRateControl.GetSingleTaxRateControl(taxCodeEdit, effectiveDate);
             return resultRaw;
         }
     }
