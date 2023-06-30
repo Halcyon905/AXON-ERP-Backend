@@ -23,7 +23,7 @@ namespace AxonsERP.Service
         {
             _taxRateControlForCreate.taxCode = "TXCOD" + _taxRateControlForCreate.taxCode;
 
-            if(GetSingleTaxRateControl(_taxRateControlForCreate.taxCode, _taxRateControlForCreate.effectiveDate) != null) {
+            if(_repositoryManager.TaxRateControl.GetSingleTaxRateControl(_taxRateControlForCreate.taxCode, _taxRateControlForCreate.effectiveDate) != null) {
                 throw new TaxRateControlDuplicateException(_taxRateControlForCreate.taxCode, _taxRateControlForCreate.effectiveDate);
             }
 
@@ -44,7 +44,7 @@ namespace AxonsERP.Service
         {
             _taxRateControlForUpdate.taxCode = "TXCOD" + _taxRateControlForUpdate.taxCode;
 
-            if(GetSingleTaxRateControl(_taxRateControlForUpdate.taxCode, _taxRateControlForUpdate.effectiveDate) == null) {
+            if(_repositoryManager.TaxRateControl.GetSingleTaxRateControl(_taxRateControlForUpdate.taxCode, _taxRateControlForUpdate.effectiveDate) == null) {
                 throw new TaxRateControlNotFoundException(_taxRateControlForUpdate.taxCode, _taxRateControlForUpdate.effectiveDate);
             }
 
