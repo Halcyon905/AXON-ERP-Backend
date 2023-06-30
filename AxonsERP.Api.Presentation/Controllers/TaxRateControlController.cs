@@ -45,6 +45,18 @@ namespace AxonsERP.Api.Presentation.Controllers
         }
 
         /// <summary>
+        /// Gets all tax rate controls currently in database based on search parameters
+        /// </summary>
+        [HttpPost("Search")]
+        [ProducesResponseType(typeof(IEnumerable<TaxRateControl>),200)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        public IActionResult SearchTaxRateControl([FromBody] TaxRateControlParameters parameters)
+        {
+            var taxRateControlList = _service.TaxRateControlService.SearchTaxRateControl(parameters);
+            return Ok(taxRateControlList);
+        }
+
+        /// <summary>
         /// Create a new tax rate control
         /// </summary>
         [HttpPost("Create")]

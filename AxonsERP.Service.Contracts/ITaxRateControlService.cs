@@ -11,5 +11,6 @@ namespace AxonsERP.Service.Contracts
         void DeleteTaxRateControl(List<TaxRateControlForDelete> taxRateControlList);
         IEnumerable<TaxRateControl> GetListTaxRateControl();
         TaxRateControl GetSingleTaxRateControl(string TaxCode, DateTime effectiveDate);
+        PagedList<TaxRateControl> SearchTaxRateControl(TaxRateControlParameters parameters);
     }
 }

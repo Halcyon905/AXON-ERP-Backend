@@ -76,5 +76,18 @@ namespace AxonsERP.Service
             var resultRaw = _repositoryManager.TaxRateControl.GetSingleTaxRateControl(taxCodeEdit, effectiveDate);
             return resultRaw;
         }
+        public PagedList<TaxRateControl> SearchTaxRateControl(TaxRateControlParameters parameters)
+        {
+            if(parameters.Search != null) {
+                foreach(var searchObject in parameters.Search) {
+                    if(!searchObject.Name.Equals("taxCode", StringComparison.InvariantCultureIgnoreCase)) {
+                        continue;
+                    }
+                    searchObject.Value = "TXCOD" + searchObject.Value;
+                }
+            }
+            var resultRaw = _repositoryManager.TaxRateControl.SearchTaxRateControl(parameters);
+            return resultRaw;
+        }
     }
 }

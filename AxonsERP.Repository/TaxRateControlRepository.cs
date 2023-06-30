@@ -2,6 +2,8 @@ using AxonsERP.Contracts;
 using AxonsERP.Entities.Models;
 using AxonsERP.Entities.RequestFeatures;
 using AxonsERP.Entities.DataTransferObjects;
+using AxonsERP.Repository.Extensions;
+using AxonsERP.Repository.Extensions.Utility;
 using Dapper;
 using System.Data;
 using Oracle.ManagedDataAccess.Client;
@@ -80,6 +82,60 @@ namespace AxonsERP.Repository
                 result.taxCode = result.taxCode.Substring(5, result.taxCode.Length - 5);
             }
             return result;
+        }
+
+        public PagedList<TaxRateControl> SearchTaxRateControl(TaxRateControlParameters parameters) 
+        {
+            /// SEARCH
+            var condition = "";
+            var dynParams = new OracleDynamicParameters();
+            if ((parameters.Search != null) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
+            {
+                var whereCause = QueryBuilder.
+                    CreateWhereQuery<TaxRateControlForColumnSearchFilter, TaxRateControlForColumnSearchTerm>
+                    (parameters.Search,parameters.SearchTermAlias, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
+
+                condition = $" {(!string.IsNullOrEmpty(whereCause) ? "WHERE " + whereCause : "")}";
+            }
+
+            // ORDER BY
+            var orderBy = "";
+            if (!string.IsNullOrEmpty(parameters.OrderBy))
+            {
+                orderBy = QueryBuilder.CreateOrderQuery<TaxRateControl>(orderByQueryString: parameters.OrderBy, 'T');
+                orderBy = $" {(!string.IsNullOrEmpty(orderBy) ? "ORDER BY " + orderBy : "")}";
+            }
+
+
+            // PAGING
+            var skip = (parameters.PageNumber - 1) * parameters.PageSize;
+            var paging = "OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY";
+
+            // SQL QUERY
+            var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(TAX_CODE) FROM TAX_RATE_CONTROL T {condition};
+                                 OPEN :rslt2 FOR SELECT T.TAX_CODE as taxCode,
+                                                        T.EFFECTIVE_DATE as effectiveDate,
+                                                        T.RATE as rate,
+                                                        T.OWNER as owner,
+                                                        T.CREATE_DATE as createDate,
+                                                        T.LAST_UPDATE_DATE as lastUpdateDate,
+                                                        T.FUNCTION as function,
+                                                        T.RATE_ORIGINAL as rateOriginal,
+                                                        G.DESC1 as desc1,
+                                                        G.DESC2 as desc2
+                                                 FROM TAX_RATE_CONTROL T, GENERAL_DESC G {condition} AND T.TAX_CODE = G.GDCODE
+                                                 {orderBy} {paging};
+                            END;";
+
+            dynParams.Add(":rslt1", OracleDbType.RefCursor, ParameterDirection.Output);
+            dynParams.Add(":rslt2", OracleDbType.RefCursor, ParameterDirection.Output);
+            dynParams.Add(":skip", OracleDbType.Int32, ParameterDirection.Input, skip);
+            dynParams.Add(":take", OracleDbType.Int32, ParameterDirection.Input, parameters.PageSize);
+
+            using var multi = Connection.QueryMultiple(query, dynParams);
+            var count = multi.ReadSingle<int>();
+            var taxRateControls = multi.Read<TaxRateControl>().ToList();
+            return new PagedList<TaxRateControl>(taxRateControls, count, parameters.PageNumber, parameters.PageSize);
         }
     }
 }

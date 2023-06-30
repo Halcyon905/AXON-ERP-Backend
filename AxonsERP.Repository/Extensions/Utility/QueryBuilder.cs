@@ -217,7 +217,7 @@ namespace AxonsERP.Repository.Extensions.Utility
             {
                 var whereCause = QueryBuilder.
                     CreateWhereQuery<TSearchFilter, TSearchTerm>
-                    (parameters.Search, parameters.SearchTermAlis, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
+                    (parameters.Search, parameters.SearchTermAlias, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
 
                 condition = $" {(!string.IsNullOrEmpty(whereCause) ? "AND " + whereCause : "")}";
             }

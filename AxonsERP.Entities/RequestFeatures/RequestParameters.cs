@@ -17,7 +17,7 @@
             }
         }
         public List<Search>? Search { get; set; }
-        public string? SearchTermAlis { get; set; }
+        public string? SearchTermAlias { get; set; }
         public string? SearchTermName { get; set; }
         public string? SearchTermValue { get; set; }
         public string? OrderBy { get; set; }
