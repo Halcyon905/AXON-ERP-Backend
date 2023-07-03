@@ -136,7 +136,7 @@ namespace AxonsERP.Repository.Extensions.Utility
 
 
                     var alias = (searchTermAlis != null) ? $"{searchTermAlis}." : "";
-                    var whereClause = $"{alias}{StringUtil.ConvertCamelToOracleWord(objectProperty.Name)} LIKE :{objectProperty.Name}";
+                    var whereClause = $"{alias}{objectProperty.Name} LIKE :{objectProperty.Name}";
 
                     if (string.IsNullOrEmpty(sqlSearchTerm))
                         sqlSearchTerm = $"{whereClause}";
@@ -192,7 +192,7 @@ namespace AxonsERP.Repository.Extensions.Utility
 
                 var direction = param.ToString().EndsWith(" desc") ? "desc" : "asc";
                 orderQueryBuilder
-                 .Append($"{alias}.{StringUtil.ConvertCamelToOracleWord(objectProperty.Name.ToString())} {direction}, ");
+                 .Append($"{alias}.{objectProperty.Name.ToString()} {direction}, ");
             }
             var orderQuery = orderQueryBuilder.ToString().TrimEnd(',', ' ');
             return string.IsNullOrEmpty(orderQuery) ? "" : orderQuery;

@@ -26,5 +26,14 @@ namespace AxonsERP.Api.Presentation
             var generalDescList = _service.GeneralDescService.GetListGeneralDesc();
             return Ok(generalDescList);
         }
+
+        [HttpPost("Search")]
+        [ProducesResponseType(typeof(IEnumerable<GeneralDesc>),200)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        public IActionResult SearchGeneralDesc([FromBody] GeneralDescParameters parameters)
+        {
+            var searchResult = _service.GeneralDescService.SearchGeneralDesc(parameters);
+            return Ok(searchResult);
+        }
     }
 }

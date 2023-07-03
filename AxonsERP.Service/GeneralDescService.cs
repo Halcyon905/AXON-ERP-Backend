@@ -2,6 +2,7 @@ using AxonsERP.Service.Contracts;
 using AxonsERP.Entities.Models;
 using AutoMapper;
 using AxonsERP.Contracts;
+using AxonsERP.Entities.RequestFeatures;
 
 namespace AxonsERP.Service 
 {
@@ -19,6 +20,12 @@ namespace AxonsERP.Service
         public IEnumerable<GeneralDesc> GetListGeneralDesc() 
         {
             var resultRaw = _repositoryManager.GeneralDescRepository.GetListGeneralDesc();
+            return resultRaw;
+        }
+
+        public PagedList<GeneralDesc> SearchGeneralDesc(GeneralDescParameters parameters)
+        {
+            var resultRaw = _repositoryManager.GeneralDescRepository.SearchGeneralDesc(parameters);
             return resultRaw;
         }
     }
