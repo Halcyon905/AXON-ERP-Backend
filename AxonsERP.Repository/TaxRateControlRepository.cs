@@ -87,7 +87,7 @@ namespace AxonsERP.Repository
         public PagedList<TaxRateControl> SearchTaxRateControl(TaxRateControlParameters parameters) 
         {
             /// SEARCH
-            var condition = "";
+            var condition = "WHERE T.TAX_CODE = G.GDCODE ";
             var dynParams = new OracleDynamicParameters();
             if ((parameters.Search != null) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
             {
@@ -95,7 +95,10 @@ namespace AxonsERP.Repository
                     CreateWhereQuery<TaxRateControlForColumnSearchFilter, TaxRateControlForColumnSearchTerm>
                     (parameters.Search,parameters.SearchTermAlias, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
 
-                condition = $" {(!string.IsNullOrEmpty(whereCause) ? "WHERE " + whereCause : "")}";
+                if(!string.IsNullOrEmpty(whereCause)) 
+                {
+                    condition += "AND " + whereCause;
+                }
             }
 
             // ORDER BY
@@ -112,7 +115,7 @@ namespace AxonsERP.Repository
             var paging = "OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY";
 
             // SQL QUERY
-            var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(TAX_CODE) FROM TAX_RATE_CONTROL T {condition};
+            var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(TAX_CODE) FROM TAX_RATE_CONTROL T, GENERAL_DESC G {condition};
                                  OPEN :rslt2 FOR SELECT T.TAX_CODE as taxCode,
                                                         T.EFFECTIVE_DATE as effectiveDate,
                                                         T.RATE as rate,
@@ -123,7 +126,7 @@ namespace AxonsERP.Repository
                                                         T.RATE_ORIGINAL as rateOriginal,
                                                         G.DESC1 as desc1,
                                                         G.DESC2 as desc2
-                                                 FROM TAX_RATE_CONTROL T, GENERAL_DESC G {condition} AND T.TAX_CODE = G.GDCODE
+                                                 FROM TAX_RATE_CONTROL T, GENERAL_DESC G {condition}
                                                  {orderBy} {paging};
                             END;";
 

@@ -4,7 +4,7 @@ namespace AxonsERP.Entities.RequestFeatures
     {
         public TaxRateControlParameters() 
         {
-            OrderBy = "effectiveDate";
+            OrderBy = "effective_Date";
         }
     }
 

@@ -33,7 +33,7 @@ namespace AxonsERP.Repository
         public PagedList<GeneralDesc> SearchGeneralDesc(GeneralDescParameters parameters) 
         {
             /// SEARCH
-            var condition = "";
+            var condition = "WHERE GDTYPE = 'TXCOD'";
             var dynParams = new OracleDynamicParameters();
             if ((parameters.Search != null) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
             {
@@ -41,7 +41,10 @@ namespace AxonsERP.Repository
                     CreateWhereQuery<GeneralDescForColumnSearchFilter, GeneralDescForColumnSearchTerm>
                     (parameters.Search,parameters.SearchTermAlias, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
 
-                condition = $" {(!string.IsNullOrEmpty(whereCause) ? "WHERE " + whereCause : "")}";
+                if(!string.IsNullOrEmpty(whereCause)) 
+                {
+                    condition += " AND " + whereCause;
+                }
             }
 
             // ORDER BY
@@ -58,11 +61,11 @@ namespace AxonsERP.Repository
             var paging = "OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY";
 
             // SQL QUERY
-            var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(GDCODE) FROM GENERAL_DESC G {condition} AND GDTYPE = 'TXCOD';
+            var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(GDCODE) FROM GENERAL_DESC G {condition};
                                  OPEN :rslt2 FOR SELECT G.GDCODE as gdCode,
                                                         G.DESC1 as desc1,
                                                         G.DESC2 as desc2
-                                                 FROM GENERAL_DESC G {condition} AND GDTYPE = 'TXCOD' 
+                                                 FROM GENERAL_DESC G {condition}
                                                  {orderBy} {paging};
                             END;";
 
