@@ -32,6 +32,12 @@ namespace AxonsERP.Repository
 
         public PagedList<GeneralDesc> SearchGeneralDesc(GeneralDescParameters parameters) 
         {
+            if(parameters.PageSize == 0)
+            {
+                var generalDescList = GetListGeneralDesc();
+                return new PagedList<GeneralDesc>(generalDescList.ToList(), generalDescList.Count(), 1, generalDescList.Count());
+            }
+
             /// SEARCH
             var condition = "WHERE GDTYPE = 'TXCOD'";
             var dynParams = new OracleDynamicParameters();

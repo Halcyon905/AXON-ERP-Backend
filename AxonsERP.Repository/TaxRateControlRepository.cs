@@ -86,6 +86,12 @@ namespace AxonsERP.Repository
 
         public PagedList<TaxRateControl> SearchTaxRateControl(TaxRateControlParameters parameters) 
         {
+            if(parameters.PageSize == 0) 
+            {
+                var taxRateControlList = GetListTaxRateControl();
+                return new PagedList<TaxRateControl>(taxRateControlList.ToList(), taxRateControlList.Count(), 1, taxRateControlList.Count());
+            }
+
             /// SEARCH
             var condition = "WHERE T.TAX_CODE = G.GDCODE ";
             var dynParams = new OracleDynamicParameters();
