@@ -86,12 +86,6 @@ namespace AxonsERP.Repository
 
         public PagedList<TaxRateControl> SearchTaxRateControl(TaxRateControlParameters parameters) 
         {
-            if(parameters.PageSize == 0) 
-            {
-                var taxRateControlList = GetListTaxRateControl();
-                return new PagedList<TaxRateControl>(taxRateControlList.ToList(), taxRateControlList.Count(), 1, taxRateControlList.Count());
-            }
-
             /// SEARCH
             var condition = "WHERE T.TAX_CODE = G.GDCODE ";
             var dynParams = new OracleDynamicParameters();
@@ -139,7 +133,15 @@ namespace AxonsERP.Repository
             dynParams.Add(":rslt1", OracleDbType.RefCursor, ParameterDirection.Output);
             dynParams.Add(":rslt2", OracleDbType.RefCursor, ParameterDirection.Output);
             dynParams.Add(":skip", OracleDbType.Int32, ParameterDirection.Input, skip);
-            dynParams.Add(":take", OracleDbType.Int32, ParameterDirection.Input, parameters.PageSize);
+            
+            if(parameters.PageSize == 0) 
+            {
+                dynParams.Add(":take", OracleDbType.Int32, ParameterDirection.Input, GetListTaxRateControl().Count());
+            }
+            else 
+            {
+                dynParams.Add(":take", OracleDbType.Int32, ParameterDirection.Input, parameters.PageSize);
+            }
 
             using var multi = Connection.QueryMultiple(query, dynParams);
             var count = multi.ReadSingle<int>();

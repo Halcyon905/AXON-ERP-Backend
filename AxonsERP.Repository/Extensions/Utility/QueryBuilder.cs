@@ -106,7 +106,7 @@ namespace AxonsERP.Repository.Extensions.Utility
                     }
 
                     var alias = (search.Alias != null) ? $"{search.Alias}." : "";
-                    var whereClause = $"{alias}{StringUtil.ConvertCamelToOracleWord(objectProperty.Name)} {comparisonOperator} {(comparisonOperator == "IS NULL" || comparisonOperator == "IS NOT NULL" ? "" : $":{paramName}")}";
+                    var whereClause = $"{alias}{objectProperty.Name} {comparisonOperator} {(comparisonOperator == "IS NULL" || comparisonOperator == "IS NOT NULL" ? "" : $":{paramName}")}";
                     if (string.IsNullOrEmpty(sqlSearchFilter))
                         sqlSearchFilter = $"{whereClause}";
                     else
