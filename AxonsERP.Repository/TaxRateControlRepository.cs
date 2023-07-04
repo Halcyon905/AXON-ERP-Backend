@@ -5,7 +5,7 @@ using AxonsERP.Entities.DataTransferObjects;
 using AxonsERP.Repository.Extensions;
 using AxonsERP.Repository.Extensions.Utility;
 using Dapper;
-using System.Data;
+using System.Data; 
 using Oracle.ManagedDataAccess.Client;
 
 namespace AxonsERP.Repository 
@@ -138,7 +138,14 @@ namespace AxonsERP.Repository
             using var multi = Connection.QueryMultiple(query, dynParams);
             var count = multi.ReadSingle<int>();
             var taxRateControls = multi.Read<TaxRateControl>().ToList();
-            return new PagedList<TaxRateControl>(taxRateControls, count, parameters.PageNumber, parameters.PageSize);
+            var results = new PagedList<TaxRateControl>(taxRateControls, count, parameters.PageNumber, parameters.PageSize);
+
+            foreach(var result in results)
+            {
+                result.taxCode = result.taxCode.Substring(5, result.taxCode.Length - 5);
+            }
+
+            return results;
         }
     }
 }
