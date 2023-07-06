@@ -4,5 +4,6 @@
     {
         ITaxRateControlService TaxRateControlService { get; }
         IGeneralDescService GeneralDescService{ get; }
+        IBillCollectionDateService BillCollectionDateService { get; }
     }
 }

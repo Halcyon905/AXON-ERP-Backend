@@ -5,6 +5,7 @@
         IApplicationCtrlRepository ApplicationCtrl { get; }
         ITaxRateControlRepository TaxRateControl { get; }
         IGeneralDescRepository GeneralDescRepository { get; }
+        IBillCollectionDateRepository BillCollectionDateRepository { get; }
 
         void Commit();
     }
