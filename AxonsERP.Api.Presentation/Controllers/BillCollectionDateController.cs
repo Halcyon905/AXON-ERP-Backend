@@ -27,6 +27,9 @@ namespace AxonsERP.Api.Presentation
             return Ok(billCollectionDateList);
         }
 
+        /// <summary>
+        /// Gets all bill collection dates for a particular company and bill collection code
+        /// </summary>
         [HttpPost("CompanyBillCollectionDate")]
         [ProducesResponseType(typeof(BillCollectionDateToReturn),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
@@ -36,6 +39,9 @@ namespace AxonsERP.Api.Presentation
             return Ok(companyBillCollectionDate);
         }
 
+        /// <summary>
+        /// Searches all bill collection dates based on given parameters
+        /// </summary>
         [HttpPost("SearchBillCollectionDate")]
         [ProducesResponseType(typeof(IEnumerable<BillCollectionDateToReturn>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
