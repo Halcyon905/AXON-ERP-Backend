@@ -1,5 +1,6 @@
 using AxonsERP.Service.Contracts;
 using AxonsERP.Entities.Models;
+using AxonsERP.Entities.Exceptions;
 using AutoMapper;
 using AxonsERP.Contracts;
 using AxonsERP.Entities.RequestFeatures;
@@ -31,6 +32,11 @@ namespace AxonsERP.Service
         public BillCollectionDateToReturn GetCompanyBillCollectionDate(BillCollectionDateForSingle billCollectionDateForSingle)
         {
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetCompanyBillCollectionDate(billCollectionDateForSingle);
+
+            if(!resultRaw.Any()) {
+                throw new BillCollectionDateNotFoundException(billCollectionDateForSingle.customerCode, billCollectionDateForSingle.billColCalculate);
+            }
+
             BillCollectionDateToReturn _billCollectionDateToReturn = _mapper.Map<BillCollectionDateToReturn>(resultRaw.ToList()[0]);
             
             List<int> startList = new List<int>();
@@ -58,6 +64,17 @@ namespace AxonsERP.Service
 
         public void UpdateBillCollectionDate(BillCollectionDateForUpdate billCollectionDateForUpdate)
         {
+            BillCollectionDateForSingle _billCollectionForSingle = new BillCollectionDateForSingle();
+
+            _billCollectionForSingle.customerCode = billCollectionDateForUpdate.customerCode;
+            _billCollectionForSingle.departmentCode = billCollectionDateForUpdate.departmentCode;
+            _billCollectionForSingle.billColCalculate = billCollectionDateForUpdate.billColCalculate;
+
+            var result = _repositoryManager.BillCollectionDateRepository.GetCompanyBillCollectionDate(_billCollectionForSingle);
+            if(!result.Any()) {
+                throw new BillCollectionDateNotFoundException(billCollectionDateForUpdate.customerCode, billCollectionDateForUpdate.billColCalculate);
+            }
+
             _repositoryManager.BillCollectionDateRepository.UpdateBillCollectionDate(billCollectionDateForUpdate);
             _repositoryManager.Commit();
         }

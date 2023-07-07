@@ -33,7 +33,7 @@ namespace AxonsERP.Api.Presentation
         /// </summary>
         [HttpPost("CompanyBillCollectionDate")]
         [ProducesResponseType(typeof(BillCollectionDateToReturn),200)]
-        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 400)]
         [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult GetCompanyBillCollectionDate([FromBody] BillCollectionDateForSingle billCollectionDateForSingle)
         {
@@ -46,7 +46,7 @@ namespace AxonsERP.Api.Presentation
         /// </summary>
         [HttpPost("SearchBillCollectionDate")]
         [ProducesResponseType(typeof(IEnumerable<BillCollectionDateToReturn>),200)]
-        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 400)]
         [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult SearchBillCollectionDate([FromBody] BillCollectionDateParameters parameters)
         {
