@@ -38,8 +38,8 @@ namespace AxonsERP.Service
 
             string nameStart, nameEnd;
             if(_billCollectionDateToReturn.billColCalculate == "BICAL5") {
-                nameStart = "billCollectionDateWeekStart";
-                nameEnd = "billCollectionDateWeekEnd";
+                nameStart = "billCollectionDateWeekEnd";
+                nameEnd = "billCollectionDateWeekStart";
             }
             else {
                 nameStart = "billCollectionDateMonthStart";
