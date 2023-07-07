@@ -21,6 +21,7 @@ namespace AxonsERP.Api.Presentation
         [HttpGet("BillCollectionDateList")]
         [ProducesResponseType(typeof(IEnumerable<BillCollectionDateToReturn>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult GetBillCollectionDateList()
         {
             var billCollectionDateList = _service.BillCollectionDateService.GetListBillCollectionDate();
@@ -33,6 +34,7 @@ namespace AxonsERP.Api.Presentation
         [HttpPost("CompanyBillCollectionDate")]
         [ProducesResponseType(typeof(BillCollectionDateToReturn),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult GetCompanyBillCollectionDate([FromBody] BillCollectionDateForSingle billCollectionDateForSingle)
         {
             var companyBillCollectionDate = _service.BillCollectionDateService.GetCompanyBillCollectionDate(billCollectionDateForSingle);
@@ -45,10 +47,24 @@ namespace AxonsERP.Api.Presentation
         [HttpPost("SearchBillCollectionDate")]
         [ProducesResponseType(typeof(IEnumerable<BillCollectionDateToReturn>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult SearchBillCollectionDate([FromBody] BillCollectionDateParameters parameters)
         {
             var billCollectionDateList = _service.BillCollectionDateService.SearchBillCollectionDate(parameters);
             return Ok(billCollectionDateList);
+        }
+
+        /// <summary>
+        /// Updates the dates on one bill collection date
+        /// </summary>
+        [HttpPut("UpdateBillCollectionDate")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        public IActionResult UpdateBillCollectionDate([FromBody] BillCollectionDateForUpdate billCollectionDateForUpdate)
+        {
+            _service.BillCollectionDateService.UpdateBillCollectionDate(billCollectionDateForUpdate);
+            return NoContent();
         }
     }
 }

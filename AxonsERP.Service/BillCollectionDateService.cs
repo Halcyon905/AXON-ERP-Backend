@@ -55,5 +55,11 @@ namespace AxonsERP.Service
 
             return _billCollectionDateToReturn;
         }
+
+        public void UpdateBillCollectionDate(BillCollectionDateForUpdate billCollectionDateForUpdate)
+        {
+            _repositoryManager.BillCollectionDateRepository.UpdateBillCollectionDate(billCollectionDateForUpdate);
+            _repositoryManager.Commit();
+        }
     }
 }

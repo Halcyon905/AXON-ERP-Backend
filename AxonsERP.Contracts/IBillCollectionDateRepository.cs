@@ -10,5 +10,6 @@ namespace AxonsERP.Contracts
         IEnumerable<BillCollectionDateToReturn> GetAllBillCollectionDate();
         IEnumerable<BillCollectionDateToReturn> SearchBillCollectionDate(BillCollectionDateParameters parameters);
         IEnumerable<BillCollectionDate> GetCompanyBillCollectionDate(BillCollectionDateForSingle billCollectionDateForSingle);
+        void UpdateBillCollectionDate(BillCollectionDateForUpdate billCollectionDateForUpdate);
     }
 }
