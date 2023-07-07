@@ -33,7 +33,7 @@ namespace AxonsERP.Repository
         public PagedList<GeneralDesc> SearchGeneralDesc(GeneralDescParameters parameters) 
         {
             /// SEARCH
-            var condition = "WHERE GDTYPE = 'TXCOD'";
+            var condition = "WHERE GDTYPE = '" + parameters.codeType + "'";
             var dynParams = new OracleDynamicParameters();
             if ((parameters.Search != null) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
             {

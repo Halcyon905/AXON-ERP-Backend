@@ -30,7 +30,7 @@ namespace AxonsERP.Api.Presentation
         [HttpPost("Search")]
         [ProducesResponseType(typeof(IEnumerable<GeneralDesc>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
-        public IActionResult SearchGeneralDesc([FromBody] GeneralDescParameters parameters)
+        public IActionResult SearchGeneralDesc(GeneralDescParameters parameters)
         {
             var searchResult = _service.GeneralDescService.SearchGeneralDesc(parameters);
             return Ok(searchResult);

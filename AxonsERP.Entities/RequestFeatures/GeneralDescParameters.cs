@@ -2,6 +2,7 @@ namespace AxonsERP.Entities.RequestFeatures
 {
     public class GeneralDescParameters : RequestParameters
     {
+        public string? codeType { get; set; }
         public GeneralDescParameters() 
         {
             OrderBy = "gdCode";
