@@ -27,7 +27,7 @@ namespace AxonsERP.Api.Presentation
             return Ok(billCollectionDateList);
         }
 
-        [HttpGet("CompanyBillCollectionDate")]
+        [HttpPost("CompanyBillCollectionDate")]
         [ProducesResponseType(typeof(IEnumerable<GeneralDesc>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
         public IActionResult GetCompanyBillCollectionDate([FromBody] BillCollectionDateForSingle billCollectionDateForSingle)
