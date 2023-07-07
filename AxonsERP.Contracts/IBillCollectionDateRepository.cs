@@ -8,6 +8,7 @@ namespace AxonsERP.Contracts
     public interface IBillCollectionDateRepository 
     {
         IEnumerable<BillCollectionDateToReturn> GetAllBillCollectionDate();
+        IEnumerable<BillCollectionDateToReturn> SearchBillCollectionDate(BillCollectionDateParameters parameters);
         IEnumerable<BillCollectionDate> GetCompanyBillCollectionDate(BillCollectionDateForSingle billCollectionDateForSingle);
     }
 }

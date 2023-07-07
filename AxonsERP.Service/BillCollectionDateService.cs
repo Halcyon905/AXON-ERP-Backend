@@ -23,6 +23,11 @@ namespace AxonsERP.Service
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetAllBillCollectionDate();
             return resultRaw;
         }
+        public IEnumerable<BillCollectionDateToReturn> SearchBillCollectionDate(BillCollectionDateParameters parameters)
+        {
+            var resultRaw = _repositoryManager.BillCollectionDateRepository.SearchBillCollectionDate(parameters);
+            return resultRaw;
+        }
         public BillCollectionDateToReturn GetCompanyBillCollectionDate(BillCollectionDateForSingle billCollectionDateForSingle)
         {
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetCompanyBillCollectionDate(billCollectionDateForSingle);

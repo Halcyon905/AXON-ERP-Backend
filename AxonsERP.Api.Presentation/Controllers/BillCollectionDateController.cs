@@ -16,7 +16,7 @@ namespace AxonsERP.Api.Presentation
         public BillCollectionDateController(IServiceManager service) => _service = service;
 
         /// <summary>
-        /// Gets a list of tax codes from general desc table
+        /// Gets all bill collection dates from database
         /// </summary>
         [HttpGet("BillCollectionDateList")]
         [ProducesResponseType(typeof(IEnumerable<BillCollectionDateToReturn>),200)]
@@ -28,12 +28,21 @@ namespace AxonsERP.Api.Presentation
         }
 
         [HttpPost("CompanyBillCollectionDate")]
-        [ProducesResponseType(typeof(IEnumerable<GeneralDesc>),200)]
+        [ProducesResponseType(typeof(BillCollectionDateToReturn),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
         public IActionResult GetCompanyBillCollectionDate([FromBody] BillCollectionDateForSingle billCollectionDateForSingle)
         {
             var companyBillCollectionDate = _service.BillCollectionDateService.GetCompanyBillCollectionDate(billCollectionDateForSingle);
             return Ok(companyBillCollectionDate);
+        }
+
+        [HttpPost("SearchBillCollectionDate")]
+        [ProducesResponseType(typeof(IEnumerable<BillCollectionDateToReturn>),200)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        public IActionResult SearchBillCollectionDate([FromBody] BillCollectionDateParameters parameters)
+        {
+            var billCollectionDateList = _service.BillCollectionDateService.SearchBillCollectionDate(parameters);
+            return Ok(billCollectionDateList);
         }
     }
 }
