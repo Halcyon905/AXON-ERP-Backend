@@ -137,5 +137,27 @@ namespace AxonsERP.Repository
             }
             Connection.Execute(query, billCollectionDateForUpdate, transaction: Transaction);
         }
+        public void DeleteBillCollectionDateByCompany(IEnumerable<BillCollectionDateForDeleteMany> billCollectionDateForDeleteMany)
+        {
+            string query = @"DELETE FROM BILL_COL_INFO
+                            WHERE CUSTOMER_CODE=:customerCode AND BILL_COL_CALCULATE=:billColCalculate AND DEPARTMENT=:departmentCode";
+            foreach(var billColInfo in billCollectionDateForDeleteMany) {
+                Connection.Execute(query, billColInfo, transaction: Transaction);
+            }
+        }
+        public void DeleteBillCollectionDateByDate(BillCollectionDateForDelete billCollectionDateForDelete)
+        {
+            string query = @"DELETE FROM BILL_COL_INFO
+                            WHERE CUSTOMER_CODE=:customerCode AND BILL_COL_CALCULATE=:billColCalculate AND DEPARTMENT=:departmentCode";
+
+            if(billCollectionDateForDelete.billColCalculate == "BICAL5") {
+                query += @" AND WEEK_NO = :startDate AND DAY_OF_WEEK = :endDate";
+            }
+            else {
+                query += @" AND START_DATE = :startDate AND END_DATE = :endDate";
+            }
+            
+            Connection.Execute(query, billCollectionDateForDelete, transaction: Transaction);
+        }
     }
 }

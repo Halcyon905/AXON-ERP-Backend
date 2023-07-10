@@ -78,5 +78,15 @@ namespace AxonsERP.Service
             _repositoryManager.BillCollectionDateRepository.UpdateBillCollectionDate(billCollectionDateForUpdate);
             _repositoryManager.Commit();
         }
+        public void DeleteBillCollectionDateByCompany(IEnumerable<BillCollectionDateForDeleteMany> billCollectionDateForDeleteMany)
+        {
+            _repositoryManager.BillCollectionDateRepository.DeleteBillCollectionDateByCompany(billCollectionDateForDeleteMany);
+            _repositoryManager.Commit();
+        }
+        public void DeleteBillCollectionDateByDate(BillCollectionDateForDelete billCollectionDateForDelete)
+        {
+            _repositoryManager.BillCollectionDateRepository.DeleteBillCollectionDateByDate(billCollectionDateForDelete);
+            _repositoryManager.Commit();
+        }
     }
 }

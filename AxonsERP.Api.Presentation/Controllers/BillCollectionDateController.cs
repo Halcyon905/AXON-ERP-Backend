@@ -66,5 +66,31 @@ namespace AxonsERP.Api.Presentation
             _service.BillCollectionDateService.UpdateBillCollectionDate(billCollectionDateForUpdate);
             return NoContent();
         }
+
+        /// <summary>
+        /// Delete all bill collection dates of client/company
+        /// </summary>
+        [HttpDelete("DeleteBillCollectionDateByCompany")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        public IActionResult DeleteBillCollectionDateByCompany([FromBody] IEnumerable<BillCollectionDateForDeleteMany> billCollectionDateForDeleteMany)
+        {
+            _service.BillCollectionDateService.DeleteBillCollectionDateByCompany(billCollectionDateForDeleteMany);
+            return NoContent();
+        }
+
+        /// <summary>
+        /// Delete all bill collection dates of a client/company
+        /// </summary>
+        [HttpDelete("DeleteBillCollectionDateByDate")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        public IActionResult DeleteBillCollectionDateByDate([FromBody] BillCollectionDateForDelete billCollectionDateForDelete)
+        {
+            _service.BillCollectionDateService.DeleteBillCollectionDateByDate(billCollectionDateForDelete);
+            return NoContent();
+        }
     }
 }
