@@ -32,6 +32,26 @@ namespace AxonsERP.Repository
                                                                                         WHERE G1.GDCODE = B.DEPARTMENT AND C.CV_CODE = B.CUSTOMER_CODE AND G2.GDCODE = B.BILL_COL_CALCULATE");
             return billCollectionDateList;
         }
+        public BillCollectionDateSingleToReturn GetSingleBillCollectionDate(BillCollectionDateForGetSingle billCollectionDate)
+        {
+            string query = @"SELECT B.CUSTOMER_CODE as customerCode,
+                            B.DEPARTMENT as departmentCode,
+                            B.BILL_COL_CALCULATE as billColCalculate,
+                            B.START_DATE as startDate,
+                            B.END_DATE as endDate,
+                            B.WEEK_NO as weekNo,
+                            B.DAY_OF_WEEK as dayOfWeek
+                            FROM BILL_COL_INFO B
+                            WHERE B.CUSTOMER_CODE=:customerCode AND B.DEPARTMENT=:departmentCode AND B.BILL_COL_CALCULATE=:billColCalculate";
+            if(billCollectionDate.billColCalculate == "BICAL5") {
+                query += @" AND B.WEEK_NO = :dateOne AND B.DAY_OF_WEEK = :dateTwo";
+            }
+            else {
+                query += @" AND B.START_DATE = :dateOne AND B.END_DATE = :dateTwo";
+            }
+            var result = Connection.QueryFirstOrDefault<BillCollectionDateSingleToReturn>(query, billCollectionDate);
+            return result;
+        }
         public IEnumerable<BillCollectionDateToReturn> SearchBillCollectionDate(BillCollectionDateParameters parameters)
         {
             /// SEARCH
@@ -97,7 +117,7 @@ namespace AxonsERP.Repository
 
             return results;
         }
-        public IEnumerable<BillCollectionDate> GetCompanyBillCollectionDate(BillCollectionDateForSingle billCollectionDateForSingle)
+        public IEnumerable<BillCollectionDate> GetCompanyBillCollectionDate(BillCollectionDateForSingleCustomer billCollectionDateForSingle)
         {
             string query = @"SELECT B.CUSTOMER_CODE as customerCode,
                             C.NAME_LOCAL as nameLocal,
@@ -160,6 +180,12 @@ namespace AxonsERP.Repository
             }
             
             Connection.Execute(query, billCollectionDateForDelete, transaction: Transaction);
+        }
+        public void CreateBillCollectionDate(BillCollectionDateForCreateDto billCollectionDateForCreateDto)
+        {
+            string query = @"INSERT INTO BILL_COL_INFO(CUSTOMER_CODE, DEPARTMENT, BILL_COL_CALCULATE, START_DATE, END_DATE, WEEK_NO, DAY_OF_WEEK, OWNER, CREATE_DATE, LAST_UPDATE_DATE, FUNCTION)
+                             VALUES(:customerCode, :departmentCode, :billColCalculate, :startDate, :endDate, :weekNo, :dayOfWeek, :owner, :createDate, :lastUpdateDate, :function)";
+            Connection.Execute(query, billCollectionDateForCreateDto, transaction: Transaction);
         }
     }
 }

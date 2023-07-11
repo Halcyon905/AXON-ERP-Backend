@@ -29,13 +29,26 @@ namespace AxonsERP.Api.Presentation
         }
 
         /// <summary>
+        /// Gets a single bill collection date from database
+        /// </summary>
+        [HttpPost("SingleBillCollectionDate", Name = "GetSingleBillCollectionDate")]
+        [ProducesResponseType(typeof(BillCollectionDateSingleToReturn),200)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        public IActionResult GetSingleBillCollectionDate(BillCollectionDateForGetSingle billCollectionDateForGetSingle)
+        {
+            var billCollectionDateList = _service.BillCollectionDateService.GetSingleBillCollectionDate(billCollectionDateForGetSingle);
+            return Ok(billCollectionDateList);
+        }
+
+        /// <summary>
         /// Gets all bill collection dates for a particular company and bill collection code
         /// </summary>
         [HttpPost("CompanyBillCollectionDate")]
         [ProducesResponseType(typeof(BillCollectionDateToReturn),200)]
         [ProducesResponseType(typeof(ErrorDetails), 400)]
         [ProducesResponseType(typeof(ErrorDetails), 500)]
-        public IActionResult GetCompanyBillCollectionDate([FromBody] BillCollectionDateForSingle billCollectionDateForSingle)
+        public IActionResult GetCompanyBillCollectionDate([FromBody] BillCollectionDateForSingleCustomer billCollectionDateForSingle)
         {
             var companyBillCollectionDate = _service.BillCollectionDateService.GetCompanyBillCollectionDate(billCollectionDateForSingle);
             return Ok(companyBillCollectionDate);
@@ -52,6 +65,19 @@ namespace AxonsERP.Api.Presentation
         {
             var billCollectionDateList = _service.BillCollectionDateService.SearchBillCollectionDate(parameters);
             return Ok(billCollectionDateList);
+        }
+
+        /// <summary>
+        /// Create a new bill collection date in edit page.
+        /// </summary>
+        [HttpPost("CreateBillCollectionDate")]
+        [ProducesResponseType(typeof(BillCollectionDate),201)]
+        [ProducesResponseType(typeof(ErrorDetails), 400)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
+        public IActionResult CreateBillCollectionDate(BillCollectionDateForCreate billCollectionDateForCreate) 
+        {   
+            var confirmation = _service.BillCollectionDateService.CreateBillCollectionDate(billCollectionDateForCreate);
+            return CreatedAtRoute("GetSingleBillCollectionDate", confirmation);
         }
 
         /// <summary>

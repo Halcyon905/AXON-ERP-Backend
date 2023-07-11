@@ -24,12 +24,17 @@ namespace AxonsERP.Service
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetAllBillCollectionDate();
             return resultRaw;
         }
+        public BillCollectionDateSingleToReturn GetSingleBillCollectionDate(BillCollectionDateForGetSingle billCollectionDate)
+        {
+            var resultRaw = _repositoryManager.BillCollectionDateRepository.GetSingleBillCollectionDate(billCollectionDate);
+            return resultRaw;
+        }
         public IEnumerable<BillCollectionDateToReturn> SearchBillCollectionDate(BillCollectionDateParameters parameters)
         {
             var resultRaw = _repositoryManager.BillCollectionDateRepository.SearchBillCollectionDate(parameters);
             return resultRaw;
         }
-        public BillCollectionDateToReturn GetCompanyBillCollectionDate(BillCollectionDateForSingle billCollectionDateForSingle)
+        public BillCollectionDateToReturn GetCompanyBillCollectionDate(BillCollectionDateForSingleCustomer billCollectionDateForSingle)
         {
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetCompanyBillCollectionDate(billCollectionDateForSingle);
 
@@ -64,7 +69,7 @@ namespace AxonsERP.Service
 
         public void UpdateBillCollectionDate(BillCollectionDateForUpdate billCollectionDateForUpdate)
         {
-            BillCollectionDateForSingle _billCollectionForSingle = new BillCollectionDateForSingle();
+            BillCollectionDateForSingleCustomer _billCollectionForSingle = new BillCollectionDateForSingleCustomer();
 
             _billCollectionForSingle.customerCode = billCollectionDateForUpdate.customerCode;
             _billCollectionForSingle.departmentCode = billCollectionDateForUpdate.departmentCode;
@@ -93,9 +98,32 @@ namespace AxonsERP.Service
             _repositoryManager.BillCollectionDateRepository.DeleteBillCollectionDateByDate(billCollectionDateForDelete);
             _repositoryManager.Commit();
         }
-        public BillCollectionDate CreateBillCollectionDate(BillCollectionDateForCreate billCollectionDateForCreate)
+        public BillCollectionDateForGetSingle CreateBillCollectionDate(BillCollectionDateForCreate billCollectionDateForCreate)
         {
-            return null;
+            BillCollectionDateForCreateDto billCollectionDateForCreateDto = _mapper.Map<BillCollectionDateForCreateDto>(billCollectionDateForCreate);
+
+            billCollectionDateForCreateDto.createDate = DateTime.Now;
+            billCollectionDateForCreateDto.lastUpdateDate = DateTime.Now;
+            billCollectionDateForCreateDto.function = "A";
+
+            _repositoryManager.BillCollectionDateRepository.CreateBillCollectionDate(billCollectionDateForCreateDto);
+            _repositoryManager.Commit();
+            
+            BillCollectionDateForGetSingle billCollectionDate = new BillCollectionDateForGetSingle();
+            billCollectionDate.customerCode = billCollectionDateForCreate.customerCode;
+            billCollectionDate.billColCalculate = billCollectionDateForCreate.billColCalculate;
+            billCollectionDate.departmentCode = billCollectionDateForCreate.departmentCode;
+
+            if(billCollectionDate.billColCalculate == "BICAL5") {
+                billCollectionDate.dateOne = billCollectionDateForCreate.weekNo;
+                billCollectionDate.dateTwo = billCollectionDateForCreate.dayOfWeek;
+            }
+            else {
+                billCollectionDate.dateOne = billCollectionDateForCreate.startDate;
+                billCollectionDate.dateTwo = billCollectionDateForCreate.endDate;
+            }
+
+            return billCollectionDate;
         }
     }
 }
