@@ -75,7 +75,12 @@ namespace AxonsERP.Service
                 throw new BillCollectionDateNotFoundException(billCollectionDateForUpdate.customerCode, billCollectionDateForUpdate.billColCalculate);
             }
 
-            _repositoryManager.BillCollectionDateRepository.UpdateBillCollectionDate(billCollectionDateForUpdate);
+            BillCollectionDateForUpdateDto billCollectionDateForUpdateDto = _mapper.Map<BillCollectionDateForUpdateDto>(billCollectionDateForUpdate);
+
+            billCollectionDateForUpdateDto.function = "C";
+            billCollectionDateForUpdateDto.lastUpdateDate = DateTime.Now;
+
+            _repositoryManager.BillCollectionDateRepository.UpdateBillCollectionDate(billCollectionDateForUpdateDto);
             _repositoryManager.Commit();
         }
         public void DeleteBillCollectionDateByCompany(IEnumerable<BillCollectionDateForDeleteMany> billCollectionDateForDeleteMany)
@@ -87,6 +92,10 @@ namespace AxonsERP.Service
         {
             _repositoryManager.BillCollectionDateRepository.DeleteBillCollectionDateByDate(billCollectionDateForDelete);
             _repositoryManager.Commit();
+        }
+        public BillCollectionDate CreateBillCollectionDate(BillCollectionDateForCreate billCollectionDateForCreate)
+        {
+            return null;
         }
     }
 }

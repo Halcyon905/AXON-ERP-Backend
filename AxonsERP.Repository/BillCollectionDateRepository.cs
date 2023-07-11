@@ -122,9 +122,11 @@ namespace AxonsERP.Repository
             var billCollectionDateList = Connection.Query<BillCollectionDate>(query, billCollectionDateForSingle);
             return billCollectionDateList;
         }
-        public void UpdateBillCollectionDate(BillCollectionDateForUpdate billCollectionDateForUpdate)
+        public void UpdateBillCollectionDate(BillCollectionDateForUpdateDto billCollectionDateForUpdate)
         {
-            string query = @"UPDATE BILL_COL_INFO B SET ";
+            string query = @"UPDATE BILL_COL_INFO B SET 
+                             B.LAST_UPDATE_DATE=:lastUpdateDate,
+                             B.FUNCTION=:function,";
             if(billCollectionDateForUpdate.billColCalculate == "BICAL5") {
                 query += @"B.WEEK_NO=:newStartDate, 
                            B.DAY_OF_WEEK=:newEndDate
