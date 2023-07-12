@@ -69,15 +69,20 @@ namespace AxonsERP.Service
 
         public void UpdateBillCollectionDate(BillCollectionDateForUpdate billCollectionDateForUpdate)
         {
-            BillCollectionDateForSingleCustomer _billCollectionForSingle = new BillCollectionDateForSingleCustomer();
-
-            _billCollectionForSingle.customerCode = billCollectionDateForUpdate.customerCode;
-            _billCollectionForSingle.departmentCode = billCollectionDateForUpdate.departmentCode;
-            _billCollectionForSingle.billColCalculate = billCollectionDateForUpdate.billColCalculate;
-
+            BillCollectionDateForSingleCustomer _billCollectionForSingle = _mapper.Map<BillCollectionDateForSingleCustomer>(billCollectionDateForUpdate);
             var result = _repositoryManager.BillCollectionDateRepository.GetCompanyBillCollectionDate(_billCollectionForSingle);
             if(!result.Any()) {
                 throw new BillCollectionDateNotFoundException(billCollectionDateForUpdate.customerCode, billCollectionDateForUpdate.billColCalculate);
+            }
+
+            BillCollectionDateForGetSingle billCollectionDate = _mapper.Map<BillCollectionDateForGetSingle>(billCollectionDateForUpdate);
+            billCollectionDate.dateOne = billCollectionDateForUpdate.newStartDate;
+            billCollectionDate.dateTwo = billCollectionDateForUpdate.newEndDate;
+
+            BillCollectionDateSingleToReturn _billCollectionDateToReturn = GetSingleBillCollectionDate(billCollectionDate);
+            if(_billCollectionDateToReturn != null)
+            {
+                throw new BillCollectionDateDuplicateException();
             }
 
             BillCollectionDateForUpdateDto billCollectionDateForUpdateDto = _mapper.Map<BillCollectionDateForUpdateDto>(billCollectionDateForUpdate);
@@ -100,19 +105,7 @@ namespace AxonsERP.Service
         }
         public BillCollectionDateForGetSingle CreateBillCollectionDate(BillCollectionDateForCreate billCollectionDateForCreate)
         {
-            BillCollectionDateForCreateDto billCollectionDateForCreateDto = _mapper.Map<BillCollectionDateForCreateDto>(billCollectionDateForCreate);
-
-            billCollectionDateForCreateDto.createDate = DateTime.Now;
-            billCollectionDateForCreateDto.lastUpdateDate = DateTime.Now;
-            billCollectionDateForCreateDto.function = "A";
-
-            _repositoryManager.BillCollectionDateRepository.CreateBillCollectionDate(billCollectionDateForCreateDto);
-            _repositoryManager.Commit();
-            
-            BillCollectionDateForGetSingle billCollectionDate = new BillCollectionDateForGetSingle();
-            billCollectionDate.customerCode = billCollectionDateForCreate.customerCode;
-            billCollectionDate.billColCalculate = billCollectionDateForCreate.billColCalculate;
-            billCollectionDate.departmentCode = billCollectionDateForCreate.departmentCode;
+            BillCollectionDateForGetSingle billCollectionDate = _mapper.Map<BillCollectionDateForGetSingle>(billCollectionDateForCreate);
 
             if(billCollectionDate.billColCalculate == "BICAL5") {
                 billCollectionDate.dateOne = billCollectionDateForCreate.weekNo;
@@ -122,6 +115,21 @@ namespace AxonsERP.Service
                 billCollectionDate.dateOne = billCollectionDateForCreate.startDate;
                 billCollectionDate.dateTwo = billCollectionDateForCreate.endDate;
             }
+
+            BillCollectionDateSingleToReturn _billCollectionDateToReturn = GetSingleBillCollectionDate(billCollectionDate);
+            if(_billCollectionDateToReturn != null)
+            {
+                throw new BillCollectionDateDuplicateException();
+            }
+
+            BillCollectionDateForCreateDto billCollectionDateForCreateDto = _mapper.Map<BillCollectionDateForCreateDto>(billCollectionDateForCreate);
+
+            billCollectionDateForCreateDto.createDate = DateTime.Now;
+            billCollectionDateForCreateDto.lastUpdateDate = DateTime.Now;
+            billCollectionDateForCreateDto.function = "A";
+
+            _repositoryManager.BillCollectionDateRepository.CreateBillCollectionDate(billCollectionDateForCreateDto);
+            _repositoryManager.Commit();
 
             return billCollectionDate;
         }

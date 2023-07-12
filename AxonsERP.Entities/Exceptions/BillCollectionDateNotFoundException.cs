@@ -5,7 +5,7 @@ namespace AxonsERP.Entities.Exceptions
     public class BillCollectionDateNotFoundException : NotFoundException
     {
         public BillCollectionDateNotFoundException(string customerCode, string billColCalculate)
-        : base($"Bill Collection Date: code {customerCode} with {billColCalculate} doesn't exist in the database.")
+        : base($"Bill Collection Date: These dates for code {customerCode} with {billColCalculate} doesn't exist in the database.")
         {
 
         }

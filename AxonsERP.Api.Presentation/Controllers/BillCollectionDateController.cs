@@ -85,7 +85,7 @@ namespace AxonsERP.Api.Presentation
         /// </summary>
         [HttpPut("UpdateBillCollectionDate")]
         [ProducesResponseType(204)]
-        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 400)]
         [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult UpdateBillCollectionDate([FromBody] BillCollectionDateForUpdate billCollectionDateForUpdate)
         {

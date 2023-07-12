@@ -11,9 +11,15 @@ namespace AxonsERP.Api
         {
             CreateMap<TaxRateControlForCreate, TaxRateControlDto>();
             CreateMap<TaxRateControlForUpdate, TaxRateControlDto>();
+
             CreateMap<BillCollectionDate, BillCollectionDateToReturn>();
+
             CreateMap<BillCollectionDateForUpdate, BillCollectionDateForUpdateDto>();
+            CreateMap<BillCollectionDateForUpdate, BillCollectionDateForSingleCustomer>();
+            CreateMap<BillCollectionDateForUpdate, BillCollectionDateForGetSingle>();
+
             CreateMap<BillCollectionDateForCreate, BillCollectionDateForCreateDto>();
+            CreateMap<BillCollectionDateForCreate, BillCollectionDateForGetSingle>();
         }
     }
 }
