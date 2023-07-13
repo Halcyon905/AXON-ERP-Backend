@@ -30,14 +30,14 @@ namespace AxonsERP.Repository
         public IEnumerable<CustomerInfo> SearchCustomerInfo(CVDescParameters parameters)
         {
             /// SEARCH
-            var condition = "WHERE ";
+            var condition = "";
             var dynParams = new OracleDynamicParameters();
             if ((parameters.Search != null) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
             {
                 var whereCause = QueryBuilder.
                     CreateWhereQuery<CVDescForColumnSearchFilter, CVDescForColumnSearchTerm>
                     (parameters.Search,parameters.SearchTermAlias, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
-                condition += whereCause;
+                condition += "WHERE " + whereCause;
             }
 
             // ORDER BY
