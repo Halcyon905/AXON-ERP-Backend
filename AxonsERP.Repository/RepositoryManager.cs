@@ -14,6 +14,7 @@ namespace AxonsERP.Repository
         private ITaxRateControlRepository? _taxRateControlRepository;
         private IGeneralDescRepository? _generalDescRepository;
         private IBillCollectionDateRepository? _billCollectionDateRepository;
+        private ICVDescRepository? _cvDescRepository;
         private bool _disposed;
 
         public RepositoryManager(IConfiguration configuration)
@@ -40,6 +41,10 @@ namespace AxonsERP.Repository
         public IBillCollectionDateRepository BillCollectionDateRepository
         {
             get { return _billCollectionDateRepository ??= new BillCollectionDateRepository(_transaction);}
+        }
+        public ICVDescRepository CVDescRepository
+        {
+            get { return _cvDescRepository ??= new CVDescRepository(_transaction);}
         }
 
         public void Commit()
