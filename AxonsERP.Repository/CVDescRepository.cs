@@ -19,7 +19,7 @@ namespace AxonsERP.Repository
 
         public IEnumerable<CustomerInfo> GetAllCustomerInfo()
         {
-            string query = @"SELECT DISTINCT C.CV_CODE as gdCode
+            string query = @"SELECT DISTINCT C.CV_CODE as gdCode,
                                              C.NAME_LOCAL as desc1,
                                              C.NAME_ENG as desc2
                                              FROM CV_DESC C";
