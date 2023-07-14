@@ -7,5 +7,6 @@ namespace AxonsERP.Contracts
     public interface ICreditControlRepository 
     {
         CreditControl GetSingleCreditControl(CreditControlForGetSingle creditControlForGetSingle);
+        IEnumerable<CreditControl> SearchCreditControl(CreditControlParameters parameters);
     }
 }

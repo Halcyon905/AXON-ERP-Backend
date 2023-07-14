@@ -21,5 +21,10 @@ namespace AxonsERP.Service
             var resultRaw = _repositoryManager.CreditControlRepository.GetSingleCreditControl(creditControlForGetSingle);
             return resultRaw;
         }
+        public IEnumerable<CreditControl> SearchCreditControl(CreditControlParameters parameters)
+        {
+            var resultRaw = _repositoryManager.CreditControlRepository.SearchCreditControl(parameters);
+            return resultRaw;
+        }
     }
 }
