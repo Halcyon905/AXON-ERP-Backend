@@ -22,7 +22,8 @@ namespace AxonsERP.Repository
             string query = @"SELECT DISTINCT C.CV_CODE as gdCode,
                                              C.NAME_LOCAL as desc1,
                                              C.NAME_ENG as desc2
-                                             FROM CV_DESC C";
+                                             FROM CV_DESC C, CREDIT_CONTROL CC
+                                             WHERE C.CV_CODE = CC.CUSTOMER_CODE AND CC.BILL_COL_CALCULATE between 'BICAL5' AND 'BICAL6'";
             var result = Connection.Query<CustomerInfo>(query);
             return result;
         }
@@ -30,14 +31,14 @@ namespace AxonsERP.Repository
         public IEnumerable<CustomerInfo> SearchCustomerInfo(CVDescParameters parameters)
         {
             /// SEARCH
-            var condition = "";
+            var condition = "WHERE C.CV_CODE = CC.CUSTOMER_CODE AND CC.BILL_COL_CALCULATE between 'BICAL5' AND 'BICAL6' ";
             var dynParams = new OracleDynamicParameters();
             if ((parameters.Search != null) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
             {
                 var whereCause = QueryBuilder.
                     CreateWhereQuery<CVDescForColumnSearchFilter, CVDescForColumnSearchTerm>
                     (parameters.Search,parameters.SearchTermAlias, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
-                condition += "WHERE " + whereCause;
+                condition += " AND " + whereCause;
             }
 
             // ORDER BY
@@ -53,11 +54,11 @@ namespace AxonsERP.Repository
             var paging = "OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY";
 
             // SQL QUERY
-            var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(CV_CODE) FROM CV_DESC C {condition};
+            var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(CV_CODE) FROM CV_DESC C, CREDIT_CONTROL CC {condition};
                                  OPEN :rslt2 FOR SELECT C.CV_CODE as gdCode,
                                                         C.NAME_LOCAL as desc1,
                                                         C.NAME_ENG as desc2
-                                                 FROM CV_DESC C {condition}
+                                                 FROM CV_DESC C, CREDIT_CONTROL CC {condition}
                                                  {orderBy} {paging};
                             END;";
 
