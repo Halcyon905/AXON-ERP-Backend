@@ -11,6 +11,7 @@ namespace AxonsERP.Service
         private readonly Lazy<IGeneralDescService> _generalDescService;
         private readonly Lazy<IBillCollectionDateService> _billCollectionDateService;
         private readonly Lazy<ICVDescService> _cvDescService;
+        private readonly Lazy<ICreditControlService> _creditControlService;
 
         public ServiceManager(IRepositoryManager repositoryManager, IMapper mapper) 
         {
@@ -18,11 +19,13 @@ namespace AxonsERP.Service
             _generalDescService = new Lazy<IGeneralDescService>(() => new GeneralDescService(repositoryManager, mapper));
             _billCollectionDateService = new Lazy<IBillCollectionDateService>(() => new BillCollectionDateService(repositoryManager, mapper));
             _cvDescService = new Lazy<ICVDescService>(() => new CVDescService(repositoryManager, mapper));
+            _creditControlService = new Lazy<ICreditControlService>(() => new CreditControlService(repositoryManager, mapper));
         }
 
         public ITaxRateControlService TaxRateControlService => _taxRateControlService.Value;
         public IGeneralDescService GeneralDescService => _generalDescService.Value;
         public IBillCollectionDateService BillCollectionDateService => _billCollectionDateService.Value;
         public ICVDescService CVDescService => _cvDescService.Value;
+        public ICreditControlService CreditControlService => _creditControlService.Value;
     }
 }

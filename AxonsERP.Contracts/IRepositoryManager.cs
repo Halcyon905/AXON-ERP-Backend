@@ -7,6 +7,7 @@
         IGeneralDescRepository GeneralDescRepository { get; }
         IBillCollectionDateRepository BillCollectionDateRepository { get; }
         ICVDescRepository CVDescRepository { get; }
+        ICreditControlRepository CreditControlRepository { get; }
 
         void Commit();
     }

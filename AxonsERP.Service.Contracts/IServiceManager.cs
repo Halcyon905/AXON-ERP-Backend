@@ -5,6 +5,7 @@
         ITaxRateControlService TaxRateControlService { get; }
         IGeneralDescService GeneralDescService{ get; }
         IBillCollectionDateService BillCollectionDateService { get; }
-        public ICVDescService CVDescService { get; }
+        ICVDescService CVDescService { get; }
+        ICreditControlService CreditControlService { get; }
     }
 }
