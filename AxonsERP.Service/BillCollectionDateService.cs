@@ -39,7 +39,12 @@ namespace AxonsERP.Service
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetCompanyBillCollectionDate(billCollectionDateForSingle);
 
             if(!resultRaw.Any()) {
-                throw new BillCollectionDateNotFoundException(billCollectionDateForSingle.customerCode, billCollectionDateForSingle.billColCalculate);
+                BillCollectionDateToReturn notFound = new BillCollectionDateToReturn();
+                
+                notFound.billCollectionDateStart = new List<int>();
+                notFound.billCollectionDateEnd = new List<int>();
+
+                return notFound;
             }
 
             BillCollectionDateToReturn _billCollectionDateToReturn = _mapper.Map<BillCollectionDateToReturn>(resultRaw.ToList()[0]);
