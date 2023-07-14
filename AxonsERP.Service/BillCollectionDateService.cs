@@ -162,6 +162,8 @@ namespace AxonsERP.Service
             billCollectionDateForCreateDto.createDate = DateTime.Now;
             billCollectionDateForCreateDto.lastUpdateDate = DateTime.Now;
             billCollectionDateForCreateDto.function = "A";
+            billCollectionDateForCreateDto.billColCalculate = "BICAL" + billCollectionDateForCreateDto.billColCalculate;
+            billCollectionDateForCreateDto.departmentCode = "OPRCD" + billCollectionDateForCreateDto.departmentCode;
 
             _repositoryManager.BillCollectionDateRepository.CreateBillCollectionDate(billCollectionDateForCreateDto);
             _repositoryManager.Commit();
