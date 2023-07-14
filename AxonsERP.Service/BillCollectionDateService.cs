@@ -70,7 +70,7 @@ namespace AxonsERP.Service
             List<int> endList = new List<int>();
 
             string nameStart, nameEnd;
-            if(_billCollectionDateToReturn.billColCalculate == "BICAL5") {
+            if(_billCollectionDateToReturn.billColCalculate == "5") {
                 nameStart = "billCollectionDateWeekEnd";
                 nameEnd = "billCollectionDateWeekStart";
             }
@@ -142,7 +142,7 @@ namespace AxonsERP.Service
             billCollectionDate.billColCalculate = "BICAL" + billCollectionDate.billColCalculate;
             billCollectionDate.departmentCode = "OPRCD" + billCollectionDate.departmentCode;
 
-            if(billCollectionDate.billColCalculate == "BICAL5") {
+            if(billCollectionDate.billColCalculate == "5") {
                 billCollectionDate.dateOne = billCollectionDateForCreate.weekNo;
                 billCollectionDate.dateTwo = billCollectionDateForCreate.dayOfWeek;
             }
