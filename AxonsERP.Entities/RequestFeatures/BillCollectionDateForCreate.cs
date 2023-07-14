@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace AxonsERP.Entities.Models
+namespace AxonsERP.Entities.RequestFeatures
 {
     public class BillCollectionDateForCreate
     {
