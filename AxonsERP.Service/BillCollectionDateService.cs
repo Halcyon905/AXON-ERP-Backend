@@ -26,16 +26,33 @@ namespace AxonsERP.Service
         }
         public BillCollectionDateSingleToReturn GetSingleBillCollectionDate(BillCollectionDateForGetSingle billCollectionDate)
         {
+            billCollectionDate.billColCalculate = "BICAL" + billCollectionDate.billColCalculate;
+            billCollectionDate.departmentCode = "OPRCD" + billCollectionDate.departmentCode;
+
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetSingleBillCollectionDate(billCollectionDate);
             return resultRaw;
         }
         public IEnumerable<BillCollectionDateToReturn> SearchBillCollectionDate(BillCollectionDateParameters parameters)
         {
+            if(parameters.Search != null) {
+                foreach(var searchObject in parameters.Search) {
+                    if(searchObject.Name.Equals("department", StringComparison.InvariantCultureIgnoreCase)) {
+                        searchObject.Value = "OPRCD" + searchObject.Value;
+                    }
+                    else if(searchObject.Name.Equals("bill_col_calculate", StringComparison.InvariantCultureIgnoreCase)) {
+                        searchObject.Value = "BICAL" + searchObject.Value;
+                    }
+                }
+            }
+
             var resultRaw = _repositoryManager.BillCollectionDateRepository.SearchBillCollectionDate(parameters);
             return resultRaw;
         }
         public BillCollectionDateToReturn GetCompanyBillCollectionDate(BillCollectionDateForSingleCustomer billCollectionDateForSingle)
         {
+            billCollectionDateForSingle.billColCalculate = "BICAL" + billCollectionDateForSingle.billColCalculate;
+            billCollectionDateForSingle.departmentCode = "OPRCD" + billCollectionDateForSingle.departmentCode;
+
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetCompanyBillCollectionDate(billCollectionDateForSingle);
 
             if(!resultRaw.Any()) {
@@ -94,23 +111,36 @@ namespace AxonsERP.Service
 
             billCollectionDateForUpdateDto.function = "C";
             billCollectionDateForUpdateDto.lastUpdateDate = DateTime.Now;
+            billCollectionDateForUpdateDto.billColCalculate = "BICAL" + billCollectionDateForUpdateDto.billColCalculate;
+            billCollectionDateForUpdateDto.departmentCode = "OPRCD" + billCollectionDateForUpdateDto.departmentCode;
 
             _repositoryManager.BillCollectionDateRepository.UpdateBillCollectionDate(billCollectionDateForUpdateDto);
             _repositoryManager.Commit();
         }
         public void DeleteBillCollectionDateByCompany(IEnumerable<BillCollectionDateForDeleteMany> billCollectionDateForDeleteMany)
         {
+            foreach(var billColInfo in billCollectionDateForDeleteMany)
+            {
+                billColInfo.billColCalculate = "BICAL" + billColInfo.billColCalculate;
+                billColInfo.departmentCode = "OPRCD" + billColInfo.departmentCode;
+            }
             _repositoryManager.BillCollectionDateRepository.DeleteBillCollectionDateByCompany(billCollectionDateForDeleteMany);
             _repositoryManager.Commit();
         }
         public void DeleteBillCollectionDateByDate(BillCollectionDateForDelete billCollectionDateForDelete)
         {
+            billCollectionDateForDelete.billColCalculate = "BICAL" + billCollectionDateForDelete.billColCalculate;
+            billCollectionDateForDelete.departmentCode = "OPRCD" + billCollectionDateForDelete.departmentCode;
+
             _repositoryManager.BillCollectionDateRepository.DeleteBillCollectionDateByDate(billCollectionDateForDelete);
             _repositoryManager.Commit();
         }
         public BillCollectionDateForGetSingle CreateBillCollectionDate(BillCollectionDateForCreate billCollectionDateForCreate)
         {
             BillCollectionDateForGetSingle billCollectionDate = _mapper.Map<BillCollectionDateForGetSingle>(billCollectionDateForCreate);
+
+            billCollectionDate.billColCalculate = "BICAL" + billCollectionDate.billColCalculate;
+            billCollectionDate.departmentCode = "OPRCD" + billCollectionDate.departmentCode;
 
             if(billCollectionDate.billColCalculate == "BICAL5") {
                 billCollectionDate.dateOne = billCollectionDateForCreate.weekNo;

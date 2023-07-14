@@ -45,7 +45,7 @@ namespace AxonsERP.Repository
         }
         public IEnumerable<TaxRateControl> GetListTaxRateControl() 
         {
-            var result = Connection.Query<TaxRateControl>(@"SELECT T.TAX_CODE as taxCode,
+            var result = Connection.Query<TaxRateControl>(@"SELECT substr(T.TAX_CODE, 6, 5) as taxCode,
                                                             T.EFFECTIVE_DATE as effectiveDate,
                                                             T.RATE as rate,
                                                             T.OWNER as owner,
@@ -56,12 +56,12 @@ namespace AxonsERP.Repository
                                                             G.DESC1 as desc1, 
                                                             G.DESC2 as desc2
                                                             FROM TAX_RATE_CONTROL T, GENERAL_DESC G
-                                                            WHERE T.TAX_CODE = G.GDCODE");                                               
+                                                            WHERE T.TAX_CODE = G.GDCODE");                                             
             return result;
         }
         public TaxRateControl GetSingleTaxRateControl(string taxCode, DateTime effectiveDate) 
         {
-            var result = Connection.QueryFirstOrDefault<TaxRateControl>(@"SELECT T.TAX_CODE as taxCode,
+            var result = Connection.QueryFirstOrDefault<TaxRateControl>(@"SELECT substr(T.TAX_CODE, 6, 5) as taxCode,
                                                                         T.EFFECTIVE_DATE as effectiveDate,
                                                                         T.RATE as rate,
                                                                         T.OWNER as owner,
@@ -109,7 +109,7 @@ namespace AxonsERP.Repository
 
             // SQL QUERY
             var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(TAX_CODE) FROM TAX_RATE_CONTROL T, GENERAL_DESC G {condition};
-                                 OPEN :rslt2 FOR SELECT T.TAX_CODE as taxCode,
+                                 OPEN :rslt2 FOR SELECT substr(T.TAX_CODE, 6, 5) as taxCode,
                                                         T.EFFECTIVE_DATE as effectiveDate,
                                                         T.RATE as rate,
                                                         T.OWNER as owner,

@@ -25,6 +25,13 @@ namespace AxonsERP.Service
 
         public PagedList<GeneralDesc> SearchGeneralDesc(GeneralDescParameters parameters)
         {
+            if(parameters.Search != null) {
+                foreach(var searchObject in parameters.Search) {
+                    if(searchObject.Name.Equals("gdCode", StringComparison.InvariantCultureIgnoreCase)) {
+                        searchObject.Value = parameters.codeType + searchObject.Value;
+                    }
+                }
+            }
             var resultRaw = _repositoryManager.GeneralDescRepository.SearchGeneralDesc(parameters);
             return resultRaw;
         }

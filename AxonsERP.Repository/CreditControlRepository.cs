@@ -22,10 +22,10 @@ namespace AxonsERP.Repository
             string query = @"SELECT DISTINCT CC.CUSTOMER_CODE as customerCode,
                                              C.NAME_LOCAL as nameLocal,
                                              C.NAME_ENG as nameEng,
-                                             CC.DEPARTMENT as departmentCode,
+                                             substr(CC.DEPARTMENT, 6, 5) as departmentCode,
                                              G1.DESC1 as departmentDesc1,
                                              G1.DESC2 as departmentDesc2,
-                                             CC.BILL_COL_CALCULATE as billColCalculate,
+                                             substr(CC.BILL_COL_CALCULATE, 6, 5) as billColCalculate,
                                              G2.DESC1 as billColCalculateDesc1,
                                              G2.DESC2 as billColCalculateDesc2
                                              FROM CREDIT_CONTROL CC, CV_DESC C, GENERAL_DESC G1, GENERAL_DESC G2
@@ -43,10 +43,10 @@ namespace AxonsERP.Repository
             string query = @"SELECT DISTINCT CC.CUSTOMER_CODE as customerCode,
                                              C.NAME_LOCAL as nameLocal,
                                              C.NAME_ENG as nameEng,
-                                             CC.DEPARTMENT as departmentCode,
+                                             substr(CC.DEPARTMENT, 6, 5) as departmentCode,
                                              G1.DESC1 as departmentDesc1,
                                              G1.DESC2 as departmentDesc2,
-                                             CC.BILL_COL_CALCULATE as billColCalculate,
+                                             substr(CC.BILL_COL_CALCULATE, 6, 5) as billColCalculate,
                                              G2.DESC1 as billColCalculateDesc1,
                                              G2.DESC2 as billColCalculateDesc2
                                              FROM CREDIT_CONTROL CC, CV_DESC C, GENERAL_DESC G1, GENERAL_DESC G2
@@ -92,10 +92,10 @@ namespace AxonsERP.Repository
                                  OPEN :rslt2 FOR SELECT C.CUSTOMER_CODE as customerCode,
                                                         D.NAME_LOCAL as nameLocal,
                                                         D.NAME_ENG as nameEng,
-                                                        C.DEPARTMENT as departmentCode,
+                                                        substr(C.DEPARTMENT, 6, 5) as departmentCode,
                                                         G1.DESC1 as departmentDesc1,
                                                         G1.DESC2 as departmentDesc2,
-                                                        C.BILL_COL_CALCULATE as billColCalculate,
+                                                        substr(C.BILL_COL_CALCULATE, 6, 5) as billColCalculate,
                                                         G2.DESC1 as billColCalculateDesc1,
                                                         G2.DESC2 as billColCalculateDesc2
                                                  FROM CV_DESC D, CREDIT_CONTROL C, GENERAL_DESC G1, GENERAL_DESC G2 {condition}

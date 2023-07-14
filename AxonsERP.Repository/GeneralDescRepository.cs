@@ -19,7 +19,7 @@ namespace AxonsERP.Repository
         
         public IEnumerable<GeneralDesc> GetListGeneralDesc()
         {
-            var generalDescList = Connection.Query<GeneralDesc>(@"SELECT GDCODE as gdCode,
+            var generalDescList = Connection.Query<GeneralDesc>(@"SELECT substr(GDCODE, 6, 5) as gdCode,
                                                                 DESC1 as desc1,
                                                                 DESC2 as desc2
                                                                 FROM GENERAL_DESC
@@ -59,7 +59,7 @@ namespace AxonsERP.Repository
 
             // SQL QUERY
             var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(GDCODE) FROM GENERAL_DESC G {condition};
-                                 OPEN :rslt2 FOR SELECT G.GDCODE as gdCode,
+                                 OPEN :rslt2 FOR SELECT substr(GDCODE, 6, 5) as gdCode,
                                                         G.DESC1 as desc1,
                                                         G.DESC2 as desc2
                                                  FROM GENERAL_DESC G {condition}
@@ -78,6 +78,7 @@ namespace AxonsERP.Repository
             {
                 dynParams.Add(":take", OracleDbType.Int32, ParameterDirection.Input, parameters.PageSize);
             }
+
 
             using var multi = Connection.QueryMultiple(query, dynParams);
             var count = multi.ReadSingle<int>();

@@ -22,10 +22,10 @@ namespace AxonsERP.Repository
             var billCollectionDateList = Connection.Query<BillCollectionDateToReturn>(@"SELECT DISTINCT B.CUSTOMER_CODE as customerCode,
                                                                                         C.NAME_LOCAL as nameLocal,
                                                                                         C.NAME_ENG as nameEng,
-                                                                                        B.DEPARTMENT as departmentCode,
+                                                                                        substr(B.DEPARTMENT, 6, 5) as departmentCode,
                                                                                         G1.DESC1 as departmentDesc1,
                                                                                         G1.DESC2 as departmentDesc2,
-                                                                                        B.BILL_COL_CALCULATE as billColCalculate,
+                                                                                        substr(B.BILL_COL_CALCULATE, 6, 5) as billColCalculate,
                                                                                         G2.DESC1 as billColCalculateDesc1,
                                                                                         G2.DESC2 as billColCalculateDesc2
                                                                                         FROM BILL_COL_INFO B, CV_DESC C, GENERAL_DESC G1, GENERAL_DESC G2
@@ -35,8 +35,8 @@ namespace AxonsERP.Repository
         public BillCollectionDateSingleToReturn GetSingleBillCollectionDate(BillCollectionDateForGetSingle billCollectionDate)
         {
             string query = @"SELECT B.CUSTOMER_CODE as customerCode,
-                            B.DEPARTMENT as departmentCode,
-                            B.BILL_COL_CALCULATE as billColCalculate,
+                            substr(B.DEPARTMENT, 6, 5) as departmentCode,
+                            substr(B.BILL_COL_CALCULATE, 6, 5) as billColCalculate,
                             B.START_DATE as startDate,
                             B.END_DATE as endDate,
                             B.WEEK_NO as weekNo,
@@ -87,10 +87,10 @@ namespace AxonsERP.Repository
                                  OPEN :rslt2 FOR SELECT DISTINCT B.CUSTOMER_CODE as customerCode,
                                                         C.NAME_LOCAL as nameLocal,
                                                         C.NAME_ENG as nameEng,
-                                                        B.DEPARTMENT as departmentCode,
+                                                        substr(B.DEPARTMENT, 6, 5) as departmentCode,
                                                         G1.DESC1 as departmentDesc1,
                                                         G1.DESC2 as departmentDesc2,
-                                                        B.BILL_COL_CALCULATE as billColCalculate,
+                                                        substr(B.BILL_COL_CALCULATE, 6, 5) as billColCalculate,
                                                         G2.DESC1 as billColCalculateDesc1,
                                                         G2.DESC2 as billColCalculateDesc2
                                                  FROM BILL_COL_INFO B, CV_DESC C, GENERAL_DESC G1, GENERAL_DESC G2 {condition}
@@ -122,10 +122,10 @@ namespace AxonsERP.Repository
             string query = @"SELECT B.CUSTOMER_CODE as customerCode,
                             C.NAME_LOCAL as nameLocal,
                             C.NAME_ENG as nameEng,
-                            B.DEPARTMENT as departmentCode,
+                            substr(B.DEPARTMENT, 6, 5) as departmentCode,
                             G1.DESC1 as departmentDesc1,
                             G1.DESC2 as departmentDesc2,
-                            B.BILL_COL_CALCULATE as billColCalculate,
+                            substr(B.BILL_COL_CALCULATE, 6, 5) as billColCalculate,
                             G2.DESC1 as billColCalculateDesc1,
                             G2.DESC2 as billColCalculateDesc2,
                             B.START_DATE as billCollectionDateMonthStart,
