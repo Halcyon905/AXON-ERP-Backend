@@ -70,7 +70,9 @@ namespace AxonsERP.Repository
                 var whereCause = QueryBuilder.
                     CreateWhereQuery<CreditControlForColumnSearchFilter, CreditControlForColumnSearchTerm>
                     (parameters.Search,parameters.SearchTermAlias, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
-                condition += "AND " + whereCause;
+                if(whereCause != "") {
+                    condition += "AND " + whereCause;
+                }
             }
 
             // ORDER BY
