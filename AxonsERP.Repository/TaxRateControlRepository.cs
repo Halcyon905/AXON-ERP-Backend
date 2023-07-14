@@ -56,10 +56,7 @@ namespace AxonsERP.Repository
                                                             G.DESC1 as desc1, 
                                                             G.DESC2 as desc2
                                                             FROM TAX_RATE_CONTROL T, GENERAL_DESC G
-                                                            WHERE T.TAX_CODE = G.GDCODE");
-            foreach(var element in result) {
-                element.taxCode = element.taxCode.Substring(5, element.taxCode.Length - 5);
-            }                                                
+                                                            WHERE T.TAX_CODE = G.GDCODE");                                               
             return result;
         }
         public TaxRateControl GetSingleTaxRateControl(string taxCode, DateTime effectiveDate) 
@@ -77,10 +74,6 @@ namespace AxonsERP.Repository
                                                                         FROM TAX_RATE_CONTROL T, GENERAL_DESC G
                                                                         WHERE TAX_CODE = :taxCode AND EFFECTIVE_DATE = :effectiveDate AND T.TAX_CODE = G.GDCODE", 
                                                                         new { taxCode, effectiveDate });
-            
-            if(result != null) {
-                result.taxCode = result.taxCode.Substring(5, result.taxCode.Length - 5);
-            }
             return result;
         }
 
@@ -147,11 +140,6 @@ namespace AxonsERP.Repository
             var count = multi.ReadSingle<int>();
             var taxRateControls = multi.Read<TaxRateControl>().ToList();
             var results = new PagedList<TaxRateControl>(taxRateControls, count, parameters.PageNumber, parameters.PageSize);
-
-            foreach(var result in results)
-            {
-                result.taxCode = result.taxCode.Substring(5, result.taxCode.Length - 5);
-            }
 
             return results;
         }

@@ -24,9 +24,6 @@ namespace AxonsERP.Repository
                                                                 DESC2 as desc2
                                                                 FROM GENERAL_DESC
                                                                 WHERE GDTYPE = 'TXCOD'");
-            foreach(var generalDesc in generalDescList) {
-                generalDesc.gdCode = generalDesc.gdCode.Substring(5, generalDesc.gdCode.Length - 5);
-            }
             return generalDescList;
         }
 
@@ -82,16 +79,10 @@ namespace AxonsERP.Repository
                 dynParams.Add(":take", OracleDbType.Int32, ParameterDirection.Input, parameters.PageSize);
             }
 
-
             using var multi = Connection.QueryMultiple(query, dynParams);
             var count = multi.ReadSingle<int>();
             var generalDescs = multi.Read<GeneralDesc>().ToList();
             var results = new PagedList<GeneralDesc>(generalDescs, count, parameters.PageNumber, parameters.PageSize);
-
-            foreach(var result in results)
-            {
-                result.gdCode = result.gdCode.Substring(5, result.gdCode.Length - 5);
-            }
 
             return results;
         }
