@@ -92,8 +92,8 @@ namespace AxonsERP.Service
         public void UpdateBillCollectionDate(BillCollectionDateForUpdate billCollectionDateForUpdate)
         {
             BillCollectionDateForSingleCustomer _billCollectionForSingle = _mapper.Map<BillCollectionDateForSingleCustomer>(billCollectionDateForUpdate);
-            var result = _repositoryManager.BillCollectionDateRepository.GetCompanyBillCollectionDate(_billCollectionForSingle);
-            if(!result.Any()) {
+            var result = GetCompanyBillCollectionDate(_billCollectionForSingle);
+            if(!result.billCollectionDateStart.Any()) {
                 throw new BillCollectionDateNotFoundException(billCollectionDateForUpdate.customerCode, billCollectionDateForUpdate.billColCalculate);
             }
 
