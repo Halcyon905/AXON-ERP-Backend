@@ -1,6 +1,7 @@
 namespace AxonsERP.Entities.Models
 {
     public class ConvertToGL {
+        public string? company { get; set; }
         public string? operationCode { get; set; }
         public string? operationDesc1 { get; set; }
         public string? operationDesc2 { get; set; }
@@ -19,6 +20,7 @@ namespace AxonsERP.Entities.Models
         public string? trnCode { get; set; }
         public string? trnNameLocal { get; set; }
         public string? trnNameEng { get; set; }
+        public DateTime effectiveDate { get; set; }
         public string? postFlag { get; set; }
         public string? accountCode1 { get; set; }
         public string? accountCodeNameLocal1 { get; set; }

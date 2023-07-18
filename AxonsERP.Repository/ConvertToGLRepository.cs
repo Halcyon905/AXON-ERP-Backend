@@ -46,7 +46,9 @@ namespace AxonsERP.Repository
                                                                     GL.ACCOUNT_CODE2 AS accountCode2,    
                                                                     C2.AC_NAME_LOCAL AS accountCodeNameLocal2,
                                                                     C2.AC_NAME_ENG AS accountCodeNameEng2,
-                                                                    GL.DEBIT_CREDIT_#2 AS type2
+                                                                    GL.DEBIT_CREDIT_#2 AS type2,
+                                                                    GL.EFFECTIVE_DATE as effectiveDate,
+                                                                    GL.COMPANY as company
                                                                 FROM CONVERT_TO_GL GL
                                                                     INNER JOIN GENERAL_DESC GDO
                                                                     ON GDO.GDCODE = GL.OPERATION_CODE
@@ -73,6 +75,11 @@ namespace AxonsERP.Repository
                                                                     GL.DOC_TYPE,
                                                                     GL.TRN_CODE");
             return generalDescList;
+        }
+
+        public ConvertToGL GetSingleConvertToGL(ConvertToGLForGetSingle convertToGLForGetSingle)
+        {
+            return null;
         }
     }
 }
