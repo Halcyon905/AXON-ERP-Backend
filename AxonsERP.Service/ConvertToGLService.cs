@@ -22,6 +22,20 @@ namespace AxonsERP.Service
             _repositoryManager = repositoryManager;
             _mapper = mapper;
         }
+
+        private void addPrefix<T>(T target)
+        {
+            foreach(var prop in target.GetType().GetProperties())
+            {
+                foreach(var _list in columnWithCodes.Values)
+                {
+                    if(prop.GetValue(target) != null && _list.Contains(prop.Name)) {
+                        prop.SetValue(target, columnWithCodes.FirstOrDefault(x => x.Value == _list).Key + prop.GetValue(target));
+                    }
+                }
+            }
+        }
+
         public IEnumerable<ConvertToGL> GetListConvertToGL() 
         {
             var resultRaw = _repositoryManager.ConvertToGLRepository.GetListConvertToGL();
@@ -29,15 +43,7 @@ namespace AxonsERP.Service
         }
         public ConvertToGL GetSingleConvertToGL(ConvertToGLForGetSingle convertToGLForGetSingle)
         {
-            foreach(var prop in convertToGLForGetSingle.GetType().GetProperties())
-            {
-                foreach(var _list in columnWithCodes.Values)
-                {
-                    if(prop.GetValue(convertToGLForGetSingle) != null && _list.Contains(prop.Name)) {
-                        prop.SetValue(convertToGLForGetSingle, columnWithCodes.FirstOrDefault(x => x.Value == _list).Key + prop.GetValue(convertToGLForGetSingle));
-                    }
-                }
-            }
+            addPrefix<ConvertToGLForGetSingle>(convertToGLForGetSingle);
             var resultRaw = _repositoryManager.ConvertToGLRepository.GetSingleConvertToGL(convertToGLForGetSingle);
             return resultRaw;
         }
