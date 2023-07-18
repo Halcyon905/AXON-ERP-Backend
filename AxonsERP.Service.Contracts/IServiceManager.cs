@@ -7,5 +7,6 @@
         IBillCollectionDateService BillCollectionDateService { get; }
         ICVDescService CVDescService { get; }
         ICreditControlService CreditControlService { get; }
+        IConvertToGLService ConvertToGLService { get; }
     }
 }
