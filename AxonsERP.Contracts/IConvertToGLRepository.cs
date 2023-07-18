@@ -7,5 +7,6 @@ namespace AxonsERP.Contracts
     public interface IConvertToGLRepository
     {
         IEnumerable<ConvertToGL> GetListConvertToGL();
+        ConvertToGL GetSingleConvertToGL(ConvertToGLForGetSingle convertToGLForGetSingle);
     }
 }

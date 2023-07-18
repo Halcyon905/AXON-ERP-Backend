@@ -6,5 +6,6 @@ namespace AxonsERP.Service.Contracts
     public interface IConvertToGLService
     {
         IEnumerable<ConvertToGL> GetListConvertToGL();
+        ConvertToGL GetSingleConvertToGL(ConvertToGLForGetSingle convertToGLForGetSingle);
     }
 }
