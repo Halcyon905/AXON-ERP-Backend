@@ -37,5 +37,17 @@ namespace AxonsERP.Api.Presentation
             var result = _service.ConvertToGLService.GetSingleConvertToGL(convertToGLForGetSingle);
             return Ok(result);
         }
+
+        /// <summary>
+        /// Searches ConvertToGL information based on given parameters.
+        /// </summary>
+        [HttpPost("SearchConvertToGL")]
+        [ProducesResponseType(typeof(ConvertToGL),200)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        public IActionResult SearchConvertToGL(ConvertToGLParameters parameters)
+        {
+            var result = _service.ConvertToGLService.SearchConvertToGL(parameters);
+            return Ok(result);
+        }
     }
 }

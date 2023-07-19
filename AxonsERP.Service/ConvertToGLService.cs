@@ -47,5 +47,10 @@ namespace AxonsERP.Service
             var resultRaw = _repositoryManager.ConvertToGLRepository.GetSingleConvertToGL(convertToGLForGetSingle);
             return resultRaw;
         }
+        public IEnumerable<ConvertToGL> SearchConvertToGL(ConvertToGLParameters parameters)
+        {
+            var resultRaw = _repositoryManager.ConvertToGLRepository.SearchConvertToGL(parameters);
+            return resultRaw;
+        }
     }
 }
