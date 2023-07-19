@@ -14,6 +14,7 @@ namespace AxonsERP.Entities.RequestFeatures
         public string? gdCode { get; set; } = string.Empty;
         public string? desc1 { get; set; } = string.Empty;
         public string? desc2 { get; set; } = string.Empty;
+        public string? cond2 { get; set; } = string.Empty;
     }
 
     public class GeneralDescForColumnSearchTerm
@@ -21,5 +22,6 @@ namespace AxonsERP.Entities.RequestFeatures
         public string? gdCode { get; set; } = string.Empty;
         public string? desc1 { get; set; } = string.Empty;
         public string? desc2 { get; set; } = string.Empty;
+        public string? cond2 { get; set; } = string.Empty;
     }
 }
