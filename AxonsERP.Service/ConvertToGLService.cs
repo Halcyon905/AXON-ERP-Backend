@@ -52,5 +52,18 @@ namespace AxonsERP.Service
             var resultRaw = _repositoryManager.ConvertToGLRepository.SearchConvertToGL(parameters);
             return resultRaw;
         }
+        public ConvertToGLForGetSingle CreateConvertToGL(ConvertToGLForCreate convertToGLForCreate)
+        {
+            ConvertToGLForGetSingle convertToGLForGetSingle = _mapper.Map<ConvertToGLForGetSingle>(convertToGLForCreate);
+            addPrefix<ConvertToGLForCreate>(convertToGLForCreate);
+
+            convertToGLForCreate.createDate = DateTime.Now;
+            convertToGLForCreate.lastUpdateDate = DateTime.Now;
+
+            _repositoryManager.ConvertToGLRepository.CreateConvertToGL(convertToGLForCreate);
+            _repositoryManager.Commit();
+
+            return convertToGLForGetSingle;
+        }
     }
 }

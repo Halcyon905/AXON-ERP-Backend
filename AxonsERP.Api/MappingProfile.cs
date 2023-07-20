@@ -20,6 +20,8 @@ namespace AxonsERP.Api
 
             CreateMap<BillCollectionDateForCreate, BillCollectionDateForCreateDto>();
             CreateMap<BillCollectionDateForCreate, BillCollectionDateForGetSingle>();
+
+            CreateMap<ConvertToGLForCreate, ConvertToGLForGetSingle>();
         }
     }
 }

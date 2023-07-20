@@ -29,7 +29,7 @@ namespace AxonsERP.Api.Presentation
         /// <summary>
         /// Gets a single ConvertToGL information from database.
         /// </summary>
-        [HttpPost("GetSingleConvertToGL")]
+        [HttpPost("GetSingleConvertToGL", Name="GetSingleConvertToGL")]
         [ProducesResponseType(typeof(ConvertToGL),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
         public IActionResult GetSingleConvertToGL(ConvertToGLForGetSingle convertToGLForGetSingle)
@@ -48,6 +48,18 @@ namespace AxonsERP.Api.Presentation
         {
             var result = _service.ConvertToGLService.SearchConvertToGL(parameters);
             return Ok(result);
+        }
+
+        /// <summary>
+        /// Creates a single new ConvertToGL entry in the database.
+        /// </summary>
+        [HttpPost("CreateConvertToGL")]
+        [ProducesResponseType(typeof(ConvertToGL),201)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        public IActionResult CreateConvertToGL(ConvertToGLForCreate convertToGLForCreate)
+        {
+            var confirmation = _service.ConvertToGLService.CreateConvertToGL(convertToGLForCreate);
+            return CreatedAtRoute("GetSingleConvertToGL", confirmation);
         }
     }
 }

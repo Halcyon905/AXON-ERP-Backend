@@ -155,5 +155,45 @@ namespace AxonsERP.Repository
 
             return results;
         }
+        public void CreateConvertToGL(ConvertToGLForCreate convertToGLForCreate)
+        {
+            string queryCol = @"INSERT INTO CONVERT_TO_GL(COMPANY,
+                                                        OPERATION_CODE,
+                                                        SUB_OPERATION,
+                                                        BUSINESS_TYPE,
+                                                        DOC_TYPE,
+                                                        TRN_CODE,
+                                                        GROUP_ACCOUNT,
+                                                        EFFECTIVE_DATE,
+                                                        OWNER,
+                                                        CREATE_DATE,
+                                                        LAST_UPDATE_DATE,
+                                                        POST_FLAG";
+            string queryValues = @"VALUES(:company,
+                                            :operationCode,
+                                            :subOperation,
+                                            :businessType,
+                                            :docType,
+                                            :trnCode,
+                                            :groupAccount,
+                                            :effectiveDate,
+                                            :owner,
+                                            :createDate,
+                                            :lastUpdateDate,
+                                            :postFlag";
+
+            if(convertToGLForCreate.postFlag == "1" || convertToGLForCreate.postFlag == "3") {
+                queryCol += ", ACCOUNT_CODE1, DEBIT_CREDIT_#1";
+                queryValues += ", :accountCode1, :type1";
+            }
+            if(convertToGLForCreate.postFlag == "2" || convertToGLForCreate.postFlag == "3") {
+                queryCol += ", ACCOUNT_CODE2, DEBIT_CREDIT_#2";
+                queryValues += ", :accountCode2, :type2";
+            }
+            queryCol += ") ";
+            queryValues += ")";
+
+            Connection.Execute(queryCol + queryValues, convertToGLForCreate);
+        }
     }
 }
