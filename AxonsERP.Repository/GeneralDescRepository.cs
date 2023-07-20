@@ -17,13 +17,13 @@ namespace AxonsERP.Repository
 
         }
         
-        public IEnumerable<GeneralDesc> GetListGeneralDesc()
+        public IEnumerable<GeneralDesc> GetListGeneralDesc(string codeType)
         {
             var generalDescList = Connection.Query<GeneralDesc>(@"SELECT substr(GDCODE, 6, 5) as gdCode,
                                                                 DESC1 as desc1,
                                                                 DESC2 as desc2
                                                                 FROM GENERAL_DESC
-                                                                WHERE GDTYPE = 'TXCOD'");
+                                                                WHERE GDTYPE = '" + codeType + "'");
             return generalDescList;
         }
 
@@ -72,7 +72,7 @@ namespace AxonsERP.Repository
 
            if(parameters.PageSize == 0) 
             {
-                dynParams.Add(":take", OracleDbType.Int32, ParameterDirection.Input, GetListGeneralDesc().Count());
+                dynParams.Add(":take", OracleDbType.Int32, ParameterDirection.Input, GetListGeneralDesc(parameters.codeType).Count());
             }
             else 
             {

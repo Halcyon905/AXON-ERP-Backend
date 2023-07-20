@@ -6,7 +6,7 @@ namespace AxonsERP.Contracts
 {
     public interface IGeneralDescRepository
     {
-        IEnumerable<GeneralDesc> GetListGeneralDesc();
+        IEnumerable<GeneralDesc> GetListGeneralDesc(string codeType);
         PagedList<GeneralDesc> SearchGeneralDesc(GeneralDescParameters parameters);
     }
 }

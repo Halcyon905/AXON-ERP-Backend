@@ -18,12 +18,12 @@ namespace AxonsERP.Api.Presentation
         /// <summary>
         /// Gets a list of tax codes from general desc table
         /// </summary>
-        [HttpGet("GeneralDescList")]
+        [HttpGet("GeneralDescList/{codeType}")]
         [ProducesResponseType(typeof(IEnumerable<GeneralDesc>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
-        public IActionResult GetGeneralDescList()
+        public IActionResult GetGeneralDescList(string codeType)
         {
-            var generalDescList = _service.GeneralDescService.GetListGeneralDesc();
+            var generalDescList = _service.GeneralDescService.GetListGeneralDesc(codeType);
             return Ok(generalDescList);
         }
 

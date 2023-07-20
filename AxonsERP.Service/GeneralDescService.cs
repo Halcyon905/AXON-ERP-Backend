@@ -17,9 +17,9 @@ namespace AxonsERP.Service
             _mapper = mapper;
         }
 
-        public IEnumerable<GeneralDesc> GetListGeneralDesc() 
+        public IEnumerable<GeneralDesc> GetListGeneralDesc(string codeType) 
         {
-            var resultRaw = _repositoryManager.GeneralDescRepository.GetListGeneralDesc();
+            var resultRaw = _repositoryManager.GeneralDescRepository.GetListGeneralDesc(codeType);
             return resultRaw;
         }
 
