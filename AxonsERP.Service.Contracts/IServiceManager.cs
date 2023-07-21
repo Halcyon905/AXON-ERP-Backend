@@ -10,5 +10,6 @@
         IConvertToGLService ConvertToGLService { get; }
         ICompanyAccChartService CompanyAccChartService { get; }
         ITRNDescService TRNDescService { get; }
+        ICompanyService CompanyService { get; }
     }
 }

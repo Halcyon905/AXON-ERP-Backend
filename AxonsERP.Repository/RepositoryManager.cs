@@ -19,6 +19,7 @@ namespace AxonsERP.Repository
         private IConvertToGLRepository? _convertToGLRepository;
         private ICompanyAccChartRepository? _companyAccChartRepository;
         private ITRNDescRepository? _trnDescRepository;
+        private ICompanyRepository? _companyRepository;
         private bool _disposed;
 
         public RepositoryManager(IConfiguration configuration)
@@ -65,6 +66,10 @@ namespace AxonsERP.Repository
         public ITRNDescRepository TRNDescRepository
         {
             get { return _trnDescRepository ??= new TRNDescRepository(_transaction);}
+        }
+        public ICompanyRepository CompanyRepository
+        {
+            get { return _companyRepository ??= new CompanyRepository(_transaction);}
         }
 
         public void Commit()
