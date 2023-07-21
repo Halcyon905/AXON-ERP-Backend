@@ -10,6 +10,7 @@
         ICreditControlRepository CreditControlRepository { get; }
         IConvertToGLRepository ConvertToGLRepository { get; }
         ICompanyAccChartRepository CompanyAccChartRepository { get; }
+        ITRNDescRepository TRNDescRepository { get; }
 
         void Commit();
     }

@@ -9,5 +9,6 @@
         ICreditControlService CreditControlService { get; }
         IConvertToGLService ConvertToGLService { get; }
         ICompanyAccChartService CompanyAccChartService { get; }
+        ITRNDescService TRNDescService { get; }
     }
 }
