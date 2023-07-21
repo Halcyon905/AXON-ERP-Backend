@@ -25,5 +25,17 @@ namespace AxonsERP.Api.Presentation
             var result = _service.CompanyAccChartService.GetListCompanyAccChart();
             return Ok(result);
         }
+        
+        /// <summary>
+        /// Searches company accounts based on given parameters.
+        /// </summary>
+        [HttpPost("SearchCompanyAccChart")]
+        [ProducesResponseType(typeof(IEnumerable<CompanyAccChart>),200)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        public IActionResult SearchCompanyAccChart(CompanyAccChartParameters parameters)
+        {
+            var result = _service.CompanyAccChartService.SearchCompanyAccChart(parameters);
+            return Ok(result);
+        }
     }
 }
