@@ -79,8 +79,10 @@ namespace AxonsERP.Repository
 
         public ConvertToGL GetSingleConvertToGL(ConvertToGLForGetSingle convertToGLForGetSingle)
         {
-            string query = @"SELECT " +
-                                selectQuery +
+            string query = @"SELECT CD.NAME_LOCAL as companyNameLocal,
+                                    CD.NAME_ENG as companyNameEng, " +
+                                selectQuery + @"INNER JOIN COMPANY CD 
+                                                ON CD.COMPANY = L.COMPANY " +
                             @"WHERE
                                 L.COMPANY = :company AND
                                 L.OPERATION_CODE = :operationCode AND

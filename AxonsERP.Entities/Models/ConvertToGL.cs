@@ -2,6 +2,8 @@ namespace AxonsERP.Entities.Models
 {
     public class ConvertToGL {
         public string? company { get; set; }
+        public string? companyNameLocal { get; set; }
+        public string? companyNameEng { get; set; }
         public string? operationCode { get; set; }
         public string? operationDesc1 { get; set; }
         public string? operationDesc2 { get; set; }
