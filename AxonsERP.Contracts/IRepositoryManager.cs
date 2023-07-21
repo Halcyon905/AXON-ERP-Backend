@@ -9,6 +9,7 @@
         ICVDescRepository CVDescRepository { get; }
         ICreditControlRepository CreditControlRepository { get; }
         IConvertToGLRepository ConvertToGLRepository { get; }
+        ICompanyAccChartRepository CompanyAccChartRepository { get; }
 
         void Commit();
     }

@@ -13,6 +13,7 @@ namespace AxonsERP.Service
         private readonly Lazy<ICVDescService> _cvDescService;
         private readonly Lazy<ICreditControlService> _creditControlService;
         private readonly Lazy<IConvertToGLService> _convertToGLService;
+        private readonly Lazy<ICompanyAccChartService> _companyAccChartService;
 
         public ServiceManager(IRepositoryManager repositoryManager, IMapper mapper) 
         {
@@ -22,6 +23,7 @@ namespace AxonsERP.Service
             _cvDescService = new Lazy<ICVDescService>(() => new CVDescService(repositoryManager, mapper));
             _creditControlService = new Lazy<ICreditControlService>(() => new CreditControlService(repositoryManager, mapper));
             _convertToGLService = new Lazy<IConvertToGLService>(() => new ConvertToGLService(repositoryManager, mapper));
+            _companyAccChartService = new Lazy<ICompanyAccChartService>(() => new CompanyAccChartService(repositoryManager, mapper));
         }
 
         public ITaxRateControlService TaxRateControlService => _taxRateControlService.Value;
@@ -30,5 +32,6 @@ namespace AxonsERP.Service
         public ICVDescService CVDescService => _cvDescService.Value;
         public ICreditControlService CreditControlService => _creditControlService.Value;
         public IConvertToGLService ConvertToGLService => _convertToGLService.Value;
+        public ICompanyAccChartService CompanyAccChartService => _companyAccChartService.Value;
     }
 }

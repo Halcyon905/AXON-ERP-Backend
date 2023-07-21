@@ -8,5 +8,6 @@
         ICVDescService CVDescService { get; }
         ICreditControlService CreditControlService { get; }
         IConvertToGLService ConvertToGLService { get; }
+        ICompanyAccChartService CompanyAccChartService { get; }
     }
 }
