@@ -3,6 +3,7 @@ using AxonsERP.Entities.Models;
 using AutoMapper;
 using AxonsERP.Contracts;
 using AxonsERP.Entities.RequestFeatures;
+using AxonsERP.Entities.Exceptions;
 
 namespace AxonsERP.Service 
 {
@@ -55,6 +56,12 @@ namespace AxonsERP.Service
         public ConvertToGLForGetSingle CreateConvertToGL(ConvertToGLForCreate convertToGLForCreate)
         {
             ConvertToGLForGetSingle convertToGLForGetSingle = _mapper.Map<ConvertToGLForGetSingle>(convertToGLForCreate);
+
+            if(GetSingleConvertToGL(convertToGLForGetSingle) != null)
+            {
+                throw new ConvertToGLDuplicateException();
+            }
+
             addPrefix<ConvertToGLForCreate>(convertToGLForCreate);
 
             convertToGLForCreate.createDate = DateTime.Now;
