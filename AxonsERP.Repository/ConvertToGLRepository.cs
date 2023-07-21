@@ -195,5 +195,26 @@ namespace AxonsERP.Repository
 
             Connection.Execute(queryCol + queryValues, convertToGLForCreate);
         }
+        public void UpdateConvertToGL(ConvertToGLForUpdate convertToGLForUpdate)
+        {
+            string query = @"UPDATE CONVERT_TO_GL SET
+                                            POST_FLAG=:postFlag,
+                                            ACCOUNT_CODE1=:accountCode1, 
+                                            DEBIT_CREDIT_#1=:type1,
+                                            ACCOUNT_CODE2=:accountCode2, 
+                                            DEBIT_CREDIT_#2=:type2,
+                                            LAST_UPDATE_DATE=:lastUpdateDate,
+                                            FUNCTION=:function
+                                        WHERE
+                                            COMPANY=:company AND
+                                            OPERATION_CODE=:operationCode AND
+                                            SUB_OPERATION=:subOperation AND
+                                            BUSINESS_TYPE=:businessType AND
+                                            DOC_TYPE=:docType AND
+                                            TRN_CODE=:trnCode AND
+                                            GROUP_ACCOUNT=:groupAccount AND
+                                            EFFECTIVE_DATE=:effectiveDate";
+            Connection.Execute(query, convertToGLForUpdate);
+        }
     }
 }

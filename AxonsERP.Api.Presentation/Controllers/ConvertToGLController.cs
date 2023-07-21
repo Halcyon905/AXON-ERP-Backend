@@ -61,5 +61,17 @@ namespace AxonsERP.Api.Presentation
             var confirmation = _service.ConvertToGLService.CreateConvertToGL(convertToGLForCreate);
             return CreatedAtRoute("GetSingleConvertToGL", confirmation);
         }
+
+        /// <summary>
+        /// Updates the account codes and debit or credit of a single ConvertToGL entry in the database.
+        /// </summary>
+        [HttpPut("UpdateConvertToGL")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        public IActionResult UpdateConvertToGL(ConvertToGLForUpdate convertToGLForUpdate)
+        {
+            _service.ConvertToGLService.UpdateConvertToGL(convertToGLForUpdate);
+            return NoContent();
+        }
     }
 }

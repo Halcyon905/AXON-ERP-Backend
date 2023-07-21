@@ -65,5 +65,25 @@ namespace AxonsERP.Service
 
             return convertToGLForGetSingle;
         }
+        public void UpdateConvertToGL(ConvertToGLForUpdate convertToGLForUpdate)
+        {
+            addPrefix<ConvertToGLForUpdate>(convertToGLForUpdate);
+            convertToGLForUpdate.lastUpdateDate = DateTime.Now;
+            convertToGLForUpdate.function = "C";
+
+            if(convertToGLForUpdate.postFlag == "1")
+            {
+                convertToGLForUpdate.accountCode2 = null;
+                convertToGLForUpdate.type2 = null;
+            }
+            else if(convertToGLForUpdate.postFlag == "2")
+            {
+                convertToGLForUpdate.accountCode1 = null;
+                convertToGLForUpdate.type1 = null;
+            }
+
+            _repositoryManager.ConvertToGLRepository.UpdateConvertToGL(convertToGLForUpdate);
+            _repositoryManager.Commit();
+        }
     }
 }
