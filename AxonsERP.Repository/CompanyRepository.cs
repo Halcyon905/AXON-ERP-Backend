@@ -30,14 +30,14 @@ namespace AxonsERP.Repository
         public IEnumerable<Company> SearchCompany(CompanyParameters parameters)
         {
             /// SEARCH
-            var condition = "";
+            var condition = "WHERE C.COMPANY = T.COMPANY ";
             var dynParams = new OracleDynamicParameters();
             if ((parameters.Search != null) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
             {
                 var whereCause = QueryBuilder.
                     CreateWhereQuery<CompanyForColumnSearchFilter, CompanyForColumnSearchTerm>
                     (parameters.Search,parameters.SearchTermAlias, parameters.SearchTermName, parameters.SearchTermValue, ref dynParams);
-                condition += "WHERE " + whereCause;
+                condition += "AND " + whereCause;
             }
 
             // ORDER BY
@@ -53,11 +53,11 @@ namespace AxonsERP.Repository
             var paging = "OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY";
 
             // SQL QUERY
-            var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(C.COMPANY) FROM COMPANY C {condition};
+            var query = @$"BEGIN OPEN :rslt1 FOR SELECT COUNT(C.COMPANY) FROM COMPANY C, LINK_OPERATION T {condition};
                                  OPEN :rslt2 FOR SELECT C.COMPANY as company,
                                                         C.NAME_LOCAL as nameLocal,
                                                         C.NAME_ENG as nameEng
-                                                FROM COMPANY C {condition}
+                                                FROM COMPANY C, LINK_OPERATION T {condition}
                                                  {orderBy} {paging};
                             END;";
 
