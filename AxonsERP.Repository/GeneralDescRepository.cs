@@ -32,7 +32,7 @@ namespace AxonsERP.Repository
             /// SEARCH
             var condition = "WHERE GDTYPE = '" + parameters.codeType + "'";
             var dynParams = new OracleDynamicParameters();
-            if ((parameters.Search != null) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
+            if ((parameters.Search != null || parameters.Search.Count() != 0) || (!string.IsNullOrEmpty(parameters.SearchTermName) && !string.IsNullOrEmpty(parameters.SearchTermValue)))
             {
                 var whereCause = QueryBuilder.
                     CreateWhereQuery<GeneralDescForColumnSearchFilter, GeneralDescForColumnSearchTerm>
