@@ -73,5 +73,17 @@ namespace AxonsERP.Api.Presentation
             _service.ConvertToGLService.UpdateConvertToGL(convertToGLForUpdate);
             return NoContent();
         }
+
+        /// <summary>
+        /// Deletes a single ConvertToGL entry in the database.
+        /// </summary>
+        [HttpDelete("DeleteConvertToGL")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(typeof(ErrorDetails), 404)]
+        public IActionResult DeleteConvertToGL(ConvertToGLForGetSingle convertToGLForGetSingle)
+        {
+            _service.ConvertToGLService.DeleteConvertToGL(convertToGLForGetSingle);
+            return NoContent();
+        }
     }
 }

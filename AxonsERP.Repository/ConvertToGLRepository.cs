@@ -218,5 +218,18 @@ namespace AxonsERP.Repository
                                             EFFECTIVE_DATE=:effectiveDate";
             Connection.Execute(query, convertToGLForUpdate);
         }
+        public void DeleteConvertToGL(ConvertToGLForGetSingle convertToGLForDelete)
+        {
+            string query = @"DELETE FROM CONVERT_TO_GL
+                            WHERE COMPANY=:company AND
+                                    OPERATION_CODE=:operationCode AND
+                                    SUB_OPERATION=:subOperation AND
+                                    BUSINESS_TYPE=:businessType AND
+                                    DOC_TYPE=:docType AND
+                                    TRN_CODE=:trnCode AND
+                                    GROUP_ACCOUNT=:groupAccount AND
+                                    EFFECTIVE_DATE=:effectiveDate";
+            Connection.Execute(query, convertToGLForDelete);
+        }
     }
 }

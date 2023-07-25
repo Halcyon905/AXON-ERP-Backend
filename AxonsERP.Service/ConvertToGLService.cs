@@ -92,5 +92,11 @@ namespace AxonsERP.Service
             _repositoryManager.ConvertToGLRepository.UpdateConvertToGL(convertToGLForUpdate);
             _repositoryManager.Commit();
         }
+        public void DeleteConvertToGL(ConvertToGLForGetSingle convertToGLForDelete)
+        {
+            addPrefix<ConvertToGLForGetSingle>(convertToGLForDelete);
+            _repositoryManager.ConvertToGLRepository.DeleteConvertToGL(convertToGLForDelete);
+            _repositoryManager.Commit();
+        }
     }
 }
