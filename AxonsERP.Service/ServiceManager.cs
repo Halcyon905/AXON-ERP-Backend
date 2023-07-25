@@ -16,6 +16,7 @@ namespace AxonsERP.Service
         private readonly Lazy<ICompanyAccChartService> _companyAccChartService;
         private readonly Lazy<ITRNDescService> _trnDescService;
         private readonly Lazy<ICompanyService> _companyService;
+        private readonly Lazy<ILinkOperationService> _linkOperationService;
 
         public ServiceManager(IRepositoryManager repositoryManager, IMapper mapper) 
         {
@@ -28,6 +29,7 @@ namespace AxonsERP.Service
             _companyAccChartService = new Lazy<ICompanyAccChartService>(() => new CompanyAccChartService(repositoryManager, mapper));
             _trnDescService = new Lazy<ITRNDescService>(() => new TRNDescService(repositoryManager, mapper));
             _companyService = new Lazy<ICompanyService>(() => new CompanyService(repositoryManager, mapper));
+            _linkOperationService = new Lazy<ILinkOperationService>(() => new LinkOperationService(repositoryManager, mapper));
         }
 
         public ITaxRateControlService TaxRateControlService => _taxRateControlService.Value;
@@ -39,5 +41,6 @@ namespace AxonsERP.Service
         public ICompanyAccChartService CompanyAccChartService => _companyAccChartService.Value;
         public ITRNDescService TRNDescService => _trnDescService.Value;
         public ICompanyService CompanyService => _companyService.Value;
+        public ILinkOperationService LinkOperationService => _linkOperationService.Value;
     }
 }

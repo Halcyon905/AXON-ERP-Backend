@@ -12,6 +12,7 @@
         ICompanyAccChartRepository CompanyAccChartRepository { get; }
         ITRNDescRepository TRNDescRepository { get; }
         ICompanyRepository CompanyRepository { get; }
+        ILinkOperationRepository LinkOperationRepository { get; }
 
         void Commit();
     }

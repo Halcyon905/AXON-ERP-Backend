@@ -11,5 +11,6 @@
         ICompanyAccChartService CompanyAccChartService { get; }
         ITRNDescService TRNDescService { get; }
         ICompanyService CompanyService { get; }
+        ILinkOperationService LinkOperationService { get; }
     }
 }

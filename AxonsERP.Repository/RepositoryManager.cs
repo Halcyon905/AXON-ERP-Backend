@@ -20,6 +20,7 @@ namespace AxonsERP.Repository
         private ICompanyAccChartRepository? _companyAccChartRepository;
         private ITRNDescRepository? _trnDescRepository;
         private ICompanyRepository? _companyRepository;
+        private ILinkOperationRepository? _linkOperationRepository;
         private bool _disposed;
 
         public RepositoryManager(IConfiguration configuration)
@@ -70,6 +71,10 @@ namespace AxonsERP.Repository
         public ICompanyRepository CompanyRepository
         {
             get { return _companyRepository ??= new CompanyRepository(_transaction);}
+        }
+        public ILinkOperationRepository LinkOperationRepository
+        {
+            get { return _linkOperationRepository ??= new LinkOperationRepository(_transaction);}
         }
 
         public void Commit()
