@@ -10,6 +10,6 @@ namespace AxonsERP.Service.Contracts
         IEnumerable<ConvertToGL> SearchConvertToGL(ConvertToGLParameters parameters);
         ConvertToGLForGetSingle CreateConvertToGL(ConvertToGLForCreate convertToGLForCreate);
         void UpdateConvertToGL(ConvertToGLForUpdate convertToGLForUpdate);
-        void DeleteConvertToGL(ConvertToGLForGetSingle convertToGLForDelete);
+        void DeleteManyConvertToGL(IEnumerable<ConvertToGLForGetSingle> convertToGLForDelete);
     }
 }

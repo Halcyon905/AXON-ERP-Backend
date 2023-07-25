@@ -218,7 +218,7 @@ namespace AxonsERP.Repository
                                             EFFECTIVE_DATE=:effectiveDate";
             Connection.Execute(query, convertToGLForUpdate);
         }
-        public void DeleteConvertToGL(ConvertToGLForGetSingle convertToGLForDelete)
+        public void DeleteManyConvertToGL(IEnumerable<ConvertToGLForGetSingle> convertToGLForDelete)
         {
             string query = @"DELETE FROM CONVERT_TO_GL
                             WHERE COMPANY=:company AND
@@ -229,7 +229,10 @@ namespace AxonsERP.Repository
                                     TRN_CODE=:trnCode AND
                                     GROUP_ACCOUNT=:groupAccount AND
                                     EFFECTIVE_DATE=:effectiveDate";
-            Connection.Execute(query, convertToGLForDelete);
+            foreach(var _convertToGL in convertToGLForDelete)
+            {
+                Connection.Execute(query, _convertToGL);
+            }
         }
     }
 }

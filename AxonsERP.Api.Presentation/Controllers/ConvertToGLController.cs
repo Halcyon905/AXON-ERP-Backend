@@ -77,12 +77,12 @@ namespace AxonsERP.Api.Presentation
         /// <summary>
         /// Deletes a single ConvertToGL entry in the database.
         /// </summary>
-        [HttpDelete("DeleteConvertToGL")]
+        [HttpDelete("DeleteManyConvertToGL")]
         [ProducesResponseType(204)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
-        public IActionResult DeleteConvertToGL(ConvertToGLForGetSingle convertToGLForGetSingle)
+        public IActionResult DeleteConvertToGL(List<ConvertToGLForGetSingle> convertToGLForGetSingle)
         {
-            _service.ConvertToGLService.DeleteConvertToGL(convertToGLForGetSingle);
+            _service.ConvertToGLService.DeleteManyConvertToGL(convertToGLForGetSingle);
             return NoContent();
         }
     }
