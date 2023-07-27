@@ -20,6 +20,7 @@ namespace AxonsERP.Api.Presentation
         [HttpGet("GetListCompanyAccChart")]
         [ProducesResponseType(typeof(IEnumerable<CompanyAccChart>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult GetListCompanyAccChart()
         {
             var result = _service.CompanyAccChartService.GetListCompanyAccChart();
@@ -32,6 +33,7 @@ namespace AxonsERP.Api.Presentation
         [HttpPost("SearchCompanyAccChart")]
         [ProducesResponseType(typeof(IEnumerable<CompanyAccChart>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult SearchCompanyAccChart(CompanyAccChartParameters parameters)
         {
             var result = _service.CompanyAccChartService.SearchCompanyAccChart(parameters);
