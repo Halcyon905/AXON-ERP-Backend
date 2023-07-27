@@ -14,9 +14,13 @@ namespace AxonsERP.Api.Presentation
         private readonly IServiceManager _service;
         public CVDescController(IServiceManager service) => _service = service;
 
+        /// <summary>
+        /// Searches for any CV desc that matches the given parameters.
+        /// </summary>
         [HttpPost("Search")]
         [ProducesResponseType(typeof(IEnumerable<GeneralDesc>),200)]
         [ProducesResponseType(typeof(ErrorDetails), 404)]
+        [ProducesResponseType(typeof(ErrorDetails), 500)]
         public IActionResult SearchCVDesc(CVDescParameters parameters)
         {
             var searchResult = _service.CVDescService.SearchCustomerInfo(parameters);

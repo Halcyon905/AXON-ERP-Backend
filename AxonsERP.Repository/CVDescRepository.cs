@@ -78,8 +78,8 @@ namespace AxonsERP.Repository
 
             using var multi = Connection.QueryMultiple(query, dynParams);
             var count = multi.ReadSingle<int>();
-            var generalDescs = multi.Read<CustomerInfo>().ToList();
-            var results = new PagedList<CustomerInfo>(generalDescs, count, parameters.PageNumber, parameters.PageSize);
+            var customerInfos = multi.Read<CustomerInfo>().ToList();
+            var results = new PagedList<CustomerInfo>(customerInfos, count, parameters.PageNumber, parameters.PageSize);
 
             return results;
         }
