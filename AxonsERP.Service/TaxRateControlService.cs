@@ -12,6 +12,7 @@ namespace AxonsERP.Service
     {
         private readonly IMapper _mapper;
         private readonly IRepositoryManager _repositoryManager;
+        private readonly string taxCodePrefix = "TXCOD";
 
         public TaxRateControlService(IRepositoryManager repositoryManager, IMapper mapper)
         {
@@ -21,7 +22,7 @@ namespace AxonsERP.Service
 
         public TaxRateControl CreateTaxRateControl(TaxRateControlForCreate _taxRateControlForCreate) 
         {
-            _taxRateControlForCreate.taxCode = "TXCOD" + _taxRateControlForCreate.taxCode;
+            _taxRateControlForCreate.taxCode = taxCodePrefix + _taxRateControlForCreate.taxCode;
 
             if(_repositoryManager.TaxRateControl.GetSingleTaxRateControl(_taxRateControlForCreate.taxCode, _taxRateControlForCreate.effectiveDate) != null) {
                 throw new TaxRateControlDuplicateException(_taxRateControlForCreate.taxCode, _taxRateControlForCreate.effectiveDate);
@@ -42,7 +43,7 @@ namespace AxonsERP.Service
         }
         public void UpdateTaxRateControl(TaxRateControlForUpdate _taxRateControlForUpdate) 
         {
-            _taxRateControlForUpdate.taxCode = "TXCOD" + _taxRateControlForUpdate.taxCode;
+            _taxRateControlForUpdate.taxCode = taxCodePrefix + _taxRateControlForUpdate.taxCode;
 
             if(_repositoryManager.TaxRateControl.GetSingleTaxRateControl(_taxRateControlForUpdate.taxCode, _taxRateControlForUpdate.effectiveDate) == null) {
                 throw new TaxRateControlNotFoundException(_taxRateControlForUpdate.taxCode, _taxRateControlForUpdate.effectiveDate);
@@ -59,7 +60,7 @@ namespace AxonsERP.Service
         public void DeleteTaxRateControl(List<TaxRateControlForDelete> taxRateControlList) 
         {
             foreach(var taxRateControl in taxRateControlList) {
-                taxRateControl.taxCode = "TXCOD" + taxRateControl.taxCode;
+                taxRateControl.taxCode = taxCodePrefix + taxRateControl.taxCode;
             }
 
             _repositoryManager.TaxRateControl.DeleteTaxRateControl(taxRateControlList);
@@ -72,7 +73,7 @@ namespace AxonsERP.Service
         }
         public TaxRateControl GetSingleTaxRateControl(string taxCode, DateTime effectiveDate) 
         {
-            var taxCodeEdit = "TXCOD" + taxCode;
+            var taxCodeEdit = taxCodePrefix + taxCode;
             var resultRaw = _repositoryManager.TaxRateControl.GetSingleTaxRateControl(taxCodeEdit, effectiveDate);
             return resultRaw;
         }
@@ -83,7 +84,7 @@ namespace AxonsERP.Service
                     if(!searchObject.Name.Equals("taxCode", StringComparison.InvariantCultureIgnoreCase)) {
                         continue;
                     }
-                    searchObject.Value = "TXCOD" + searchObject.Value;
+                    searchObject.Value = taxCodePrefix + searchObject.Value;
                 }
             }
             var resultRaw = _repositoryManager.TaxRateControl.SearchTaxRateControl(parameters);
