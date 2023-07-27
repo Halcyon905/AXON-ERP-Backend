@@ -12,6 +12,11 @@ namespace AxonsERP.Service
     {
         private readonly IMapper _mapper;
         private readonly IRepositoryManager _repositoryManager;
+        private Dictionary<string, string> columnWithCodes = new Dictionary<string, string>()
+                                                                                        {
+                                                                                            {"billColCalculate", "BICAL"},
+                                                                                            {"departmentCode", "OPRCD"}
+                                                                                        };
 
         public BillCollectionDateService(IRepositoryManager repositoryManager, IMapper mapper)
         {
@@ -19,6 +24,16 @@ namespace AxonsERP.Service
             _mapper = mapper;
         }
 
+        public void addPrefix<T>(T target)
+        {
+            foreach(var prop in target.GetType().GetProperties())
+            {
+                if(columnWithCodes.ContainsKey(prop.Name))
+                {
+                    prop.SetValue(target, columnWithCodes[prop.Name] + prop.GetValue(target));
+                }
+            }
+        }
         public IEnumerable<BillCollectionDateToReturn> GetListBillCollectionDate()
         {
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetAllBillCollectionDate();
@@ -26,8 +41,7 @@ namespace AxonsERP.Service
         }
         public BillCollectionDateSingleToReturn GetSingleBillCollectionDate(BillCollectionDateForGetSingle billCollectionDate)
         {
-            billCollectionDate.billColCalculate = "BICAL" + billCollectionDate.billColCalculate;
-            billCollectionDate.departmentCode = "OPRCD" + billCollectionDate.departmentCode;
+            addPrefix<BillCollectionDateForGetSingle>(billCollectionDate);
 
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetSingleBillCollectionDate(billCollectionDate);
             return resultRaw;
@@ -50,8 +64,7 @@ namespace AxonsERP.Service
         }
         public BillCollectionDateToReturn GetCompanyBillCollectionDate(BillCollectionDateForSingleCustomer billCollectionDateForSingle)
         {
-            billCollectionDateForSingle.billColCalculate = "BICAL" + billCollectionDateForSingle.billColCalculate;
-            billCollectionDateForSingle.departmentCode = "OPRCD" + billCollectionDateForSingle.departmentCode;
+            addPrefix<BillCollectionDateForSingleCustomer>(billCollectionDateForSingle);
 
             var resultRaw = _repositoryManager.BillCollectionDateRepository.GetCompanyBillCollectionDate(billCollectionDateForSingle);
 
@@ -111,8 +124,7 @@ namespace AxonsERP.Service
 
             billCollectionDateForUpdateDto.function = "C";
             billCollectionDateForUpdateDto.lastUpdateDate = DateTime.Now;
-            billCollectionDateForUpdateDto.billColCalculate = "BICAL" + billCollectionDateForUpdateDto.billColCalculate;
-            billCollectionDateForUpdateDto.departmentCode = "OPRCD" + billCollectionDateForUpdateDto.departmentCode;
+            addPrefix<BillCollectionDateForUpdateDto>(billCollectionDateForUpdateDto);
 
             _repositoryManager.BillCollectionDateRepository.UpdateBillCollectionDate(billCollectionDateForUpdateDto);
             _repositoryManager.Commit();
@@ -121,16 +133,14 @@ namespace AxonsERP.Service
         {
             foreach(var billColInfo in billCollectionDateForDeleteMany)
             {
-                billColInfo.billColCalculate = "BICAL" + billColInfo.billColCalculate;
-                billColInfo.departmentCode = "OPRCD" + billColInfo.departmentCode;
+                addPrefix<BillCollectionDateForDeleteMany>(billColInfo);
             }
             _repositoryManager.BillCollectionDateRepository.DeleteBillCollectionDateByCompany(billCollectionDateForDeleteMany);
             _repositoryManager.Commit();
         }
         public void DeleteBillCollectionDateByDate(BillCollectionDateForDelete billCollectionDateForDelete)
         {
-            billCollectionDateForDelete.billColCalculate = "BICAL" + billCollectionDateForDelete.billColCalculate;
-            billCollectionDateForDelete.departmentCode = "OPRCD" + billCollectionDateForDelete.departmentCode;
+            addPrefix<BillCollectionDateForDelete>(billCollectionDateForDelete);
 
             _repositoryManager.BillCollectionDateRepository.DeleteBillCollectionDateByDate(billCollectionDateForDelete);
             _repositoryManager.Commit();
@@ -159,8 +169,7 @@ namespace AxonsERP.Service
             billCollectionDateForCreateDto.createDate = DateTime.Now;
             billCollectionDateForCreateDto.lastUpdateDate = DateTime.Now;
             billCollectionDateForCreateDto.function = "A";
-            billCollectionDateForCreateDto.billColCalculate = "BICAL" + billCollectionDateForCreateDto.billColCalculate;
-            billCollectionDateForCreateDto.departmentCode = "OPRCD" + billCollectionDateForCreateDto.departmentCode;
+            addPrefix<BillCollectionDateForCreateDto>(billCollectionDateForCreateDto);
 
             _repositoryManager.BillCollectionDateRepository.CreateBillCollectionDate(billCollectionDateForCreateDto);
             _repositoryManager.Commit();
